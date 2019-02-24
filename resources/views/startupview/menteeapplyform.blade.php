@@ -14,7 +14,7 @@
       <div class="row">
         <div class="col-12">
           <h1>Blank</h1>
-          <p>This is an exampe of a blank page that you can use as a starting point for creating new ones.</p>
+          <p>This is an exampe of apage that you can use as a starting point for creating new ones.</p>
         </div>
       </div>
     </div>
