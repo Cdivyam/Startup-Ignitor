@@ -25,6 +25,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 // mentee routes sanya
 Route::get('/admin/Startup-inital','StartupController@index');
+Route::get('/stakeholdersindex','StakeholderController@registration1');
+Route::get('/stakeholdersprofile','StakeholderController@stakeholdersprofile');
+Route::get('/reglvl1','StakeholderController@reglvl1');
 
 
 
