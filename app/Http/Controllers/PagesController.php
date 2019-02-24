@@ -10,6 +10,7 @@ class PagesController extends Controller
     {
         return redirect('http://localhost:8080/blogs');
     }
+    
     public function about()
     {
         return view('front.about');

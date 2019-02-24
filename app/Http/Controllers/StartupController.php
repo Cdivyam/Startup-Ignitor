@@ -10,4 +10,7 @@ class StartupController extends Controller
     {
         return view('startupview.index');
     }
+    public function menteeapplyform(){
+        return view('startupview.menteeapplyform');
+    }
 }
