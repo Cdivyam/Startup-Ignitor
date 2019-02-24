@@ -20,6 +20,7 @@ Route::get('/templates', 'PagesController@templates');
 Route::get('/live-session', 'PagesController@livesession');
 Route::get('/tutorial', 'PagesController@tutorial');
 
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
@@ -31,12 +32,8 @@ Route::get('/reglvl1','StakeholderController@reglvl1');
 
 
 
-
-
-
-
-
 // Mentor routes tanya
+Route::get('/menteeapplyform', 'StartupController@menteeapplyform');
 Route::get('/admin/mentor-inital','MentorController@index');
 
 
