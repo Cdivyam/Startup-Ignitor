@@ -107,7 +107,7 @@
 <body id="body">
 
     <style>
-        body {
+        /* body {
           font-family: Arial, Helvetica, sans-serif;
           font-size: 20px;
         }
@@ -126,19 +126,19 @@
           padding: 15px;
           border-radius: 4px;
           /* opacity: 0.2; */
-        }
+        } */
 
         /* #myBtn : hover {
           opacity: 0.2;
         }
          */
         </style>
-      <iframe id="myBtn"
+      {{-- <iframe id="myBtn"
       allow="microphone;"
       width="350"
       height="430"
       src="https://console.dialogflow.com/api-client/demo/embedded/4ce60952-89ed-48fc-9d21-2631f56996f5">
-  </iframe>
+  </iframe> --}}
  <!--
   Start Preloader
   ==================================== -->

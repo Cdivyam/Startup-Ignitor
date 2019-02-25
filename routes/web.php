@@ -43,38 +43,8 @@ Route::get('/admin/mentor-inital','MentorController@index');
 
 
 
-// incubator routes shubham
-Route::get('/admin/incubator-inital','IncubatorController@index');
-
-
-
-
-
-
-
-// Accelarator routes abhishek
-Route::get('/admin/accelarator-inital','AccelaratorController@index');
-
-
-
-
-
-
-
-
-
-// Investor routes prakash
-Route::get('/admin/investor-inital','InvestorController@index');
-
-
-
-
-
-
-
-
-
-
-// service provider routes divyam
-Route::get('/admin/servviceprovider-inital','ServiceprovController@index');
-
+//stakeholder routes
+Route::get('/stakeholdersindex','StakeholderController@registration1');
+Route::get('/stakeholdersprofile','StakeholderController@stakeholdersprofile');
+Route::get('/reglvl1','StakeholderController@reglvl1');
+Route::get('/admin/stakeholder-inital','StakeholderController@index');

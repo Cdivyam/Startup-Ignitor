@@ -9,92 +9,68 @@
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
                 <a class="nav-link" href="{{ url('/admin') }}">
                     <i class="fa fa-fw fa-dashboard"></i>
-                    <span class="nav-link-text">startupDashboard</span>
+                    <span class="nav-link-text">Dashboard</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
                 <a class="nav-link" href="{{ url('/admin/charts') }}">
                     <i class="fa fa-fw fa-area-chart"></i>
-                    <span class="nav-link-text">Charts</span>
+                    <span class="nav-link-text">List mentors</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
                 <a class="nav-link" href="{{ url('/admin/tables') }}">
                     <i class="fa fa-fw fa-table"></i>
-                    <span class="nav-link-text">Tables</span>
+                    <span class="nav-link-text">List stakeholders</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
                 <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa-wrench"></i>
-                    <span class="nav-link-text">Components</span>
+                    <span class="nav-link-text">My Applications</span>
                 </a>
                 <ul class="sidenav-second-level collapse" id="collapseComponents">
                     <li>
-                        <a href="{{ url('/admin/navbar') }}">Navbar</a>
+                        <a href="{{ url('/admin/navbar') }}">Accepted</a>
                     </li>
                     <li>
-                        <a href="{{ url('/admin/cards') }}">Cards</a>
+                        <a href="{{ url('/admin/cards') }}">Rejected</a>
+                    </li>
+                    <li>
+                        <a href="{{ url('/admin/cards') }}">Pending</a>
                     </li>
                 </ul>
             </li>
+            
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
                 <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa-file"></i>
-                    <span class="nav-link-text">Example Pages</span>
+                    <span class="nav-link-text">My network</span>
                 </a>
                 <ul class="sidenav-second-level collapse" id="collapseExamplePages">
                     <li>
-                        <a href="{{ url('/admin/login') }}">Login Page</a>
+                        <a href="{{ url('/admin/login') }}">Chats</a>
                     </li>
                     <li>
-                        <a href="{{ url('/admin/register') }}">Registration Page</a>
+                        <a href="{{ url('/admin/register') }}">Video Call</a>
                     </li>
                     <li>
-                        <a href="{{ url('/admin/forgot-password') }}">Forgot Password Page</a>
+                        <a href="{{ url('/admin/register') }}">Forums</a>
                     </li>
                     <li>
-                        <a href="{{ url('/admin/blank') }}">Blank Page</a>
+                        <a href="{{ url('/admin/register') }}">Blogs</a>
                     </li>
                 </ul>
             </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
-                    <i class="fa fa-fw fa-sitemap"></i>
-                    <span class="nav-link-text">Menu Levels</span>
-                </a>
-                <ul class="sidenav-second-level collapse" id="collapseMulti">
-                    <li>
-                        <a href="#">Second Level Item</a>
-                    </li>
-                    <li>
-                        <a href="#">Second Level Item</a>
-                    </li>
-                    <li>
-                        <a href="#">Second Level Item</a>
-                    </li>
-                    <li>
-                        <a class="nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti2">Third Level</a>
-                        <ul class="sidenav-third-level collapse" id="collapseMulti2">
-                            <li>
-                                <a href="#">Third Level Item</a>
-                            </li>
-                            <li>
-                                <a href="#">Third Level Item</a>
-                            </li>
-                            <li>
-                                <a href="#">Third Level Item</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Link">
-                <a class="nav-link" href="#">
-                    <i class="fa fa-fw fa-link"></i>
-                    <span class="nav-link-text">Link</span>
+            
+            
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+                <a class="nav-link" href="{{ url('/admin/tables') }}">
+                    <i class="fa fa-fw fa-table"></i>
+                    <span class="nav-link-text">Ongoing Connection</span>
                 </a>
             </li>
+            
         </ul>
         <ul class="navbar-nav sidenav-toggler">
             <li class="nav-item">

@@ -1,4 +1,4 @@
-@extends('investorview.app')
+@extends('stakeholders.app')
 
 @section('content')
 
