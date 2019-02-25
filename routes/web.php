@@ -33,6 +33,7 @@ Route::get('/reglvl1','StakeholderController@reglvl1');
 
 
 // Mentor routes tanya
+Route::get('/mouform','StartupController@mouform');
 Route::get('/menteeapplyform', 'StartupController@menteeapplyform');
 Route::get('/admin/mentor-inital','MentorController@index');
 

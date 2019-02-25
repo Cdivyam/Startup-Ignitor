@@ -7,15 +7,23 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-                <a class="nav-link" href="{{ url('/admin') }}">
+                <a class="nav-link" href="{{ url('/menteeapplyform') }}">
                     <i class="fa fa-fw fa-dashboard"></i>
+<<<<<<< Updated upstream
                     <span class="nav-link-text">Dashboard</span>
+=======
+                    <span class="nav-link-text">Multi</span>
+>>>>>>> Stashed changes
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-                <a class="nav-link" href="{{ url('/admin/charts') }}">
+                <a class="nav-link" href="{{ url('/mouform') }}">
                     <i class="fa fa-fw fa-area-chart"></i>
+<<<<<<< Updated upstream
                     <span class="nav-link-text">List mentors</span>
+=======
+                    <span class="nav-link-text">Mou</span>
+>>>>>>> Stashed changes
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
