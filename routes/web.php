@@ -24,11 +24,13 @@ Route::get('/tutorial', 'PagesController@tutorial');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-// mentee routes sanya
+//Stakeholder routes sanya
 Route::get('/admin/Startup-inital','StartupController@index');
-Route::get('/stakeholdersindex','StakeholderController@registration1');
 Route::get('/stakeholdersprofile','StakeholderController@stakeholdersprofile');
 Route::get('/reglvl1','StakeholderController@reglvl1');
+Route::get('/reglvl2','StakeholderController@reglvl2');
+Route::get('/profile','StakeholderController@profile');
+
 
 
 
@@ -44,8 +46,13 @@ Route::get('/admin/mentor-inital','MentorController@index');
 
 
 
+Route::resource('data_repository','DataRepController');
+Route::get('/data_repository/download/{id}', 'DataRepController@download')->name('downloadfile');
 //stakeholder routes
 Route::get('/stakeholdersindex','StakeholderController@registration1');
 Route::get('/stakeholdersprofile','StakeholderController@stakeholdersprofile');
 Route::get('/reglvl1','StakeholderController@reglvl1');
 Route::get('/admin/stakeholder-inital','StakeholderController@index');
+// service provider routes divyam
+//Route::get('/admin/servviceprovider-inital','ServiceprovController@index');
+//edited by Divyam
