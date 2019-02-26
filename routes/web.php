@@ -33,6 +33,7 @@ Route::get('/reglvl1','StakeholderController@reglvl1');
 
 
 // Mentor routes tanya
+Route::get('/mouform','StartupController@mouform');
 Route::get('/menteeapplyform', 'StartupController@menteeapplyform');
 Route::get('/admin/mentor-inital','MentorController@index');
 
@@ -43,40 +44,13 @@ Route::get('/admin/mentor-inital','MentorController@index');
 
 
 
-// incubator routes shubham
-Route::get('/admin/incubator-inital','IncubatorController@index');
-
-
-
-
-
-
-
-// Accelarator routes abhishek
-Route::get('/admin/accelarator-inital','AccelaratorController@index');
-
-
-
-
-
-
-
-
-
-// Investor routes prakash
-Route::get('/admin/investor-inital','InvestorController@index');
-
-
-
-
-
-
-
-
-
-
+Route::resource('data_repository','DataRepController');
+Route::get('/data_repository/download/{id}', 'DataRepController@download')->name('downloadfile');
+//stakeholder routes
+Route::get('/stakeholdersindex','StakeholderController@registration1');
+Route::get('/stakeholdersprofile','StakeholderController@stakeholdersprofile');
+Route::get('/reglvl1','StakeholderController@reglvl1');
+Route::get('/admin/stakeholder-inital','StakeholderController@index');
 // service provider routes divyam
 //Route::get('/admin/servviceprovider-inital','ServiceprovController@index');
 //edited by Divyam
-Route::resource('data_repository','DataRepController');
-Route::get('/data_repository/download/{id}', 'DataRepController@download')->name('downloadfile');

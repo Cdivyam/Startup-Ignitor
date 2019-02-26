@@ -9,19 +9,25 @@
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
                 <a class="nav-link" href="{{ url('/stakeholdersindex') }}">
                     <i class="fa fa-fw fa-dashboard"></i>
-                    <span class="nav-link-text">Index startupDashboard</span>
+                    <span class="nav-link-text">Registration I</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
                 <a class="nav-link" href="{{ url('/admin/charts') }}">
                     <i class="fa fa-fw fa-area-chart"></i>
-                    <span class="nav-link-text">Charts</span>
+                    <span class="nav-link-text">Registration II</span>
+                </a>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+                <a class="nav-link" href="{{ url('/admin/charts') }}">
+                    <i class="fa fa-fw fa-area-chart"></i>
+                    <span class="nav-link-text">Profile look</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
                 <a class="nav-link" href="{{ url('/admin/tables') }}">
                     <i class="fa fa-fw fa-table"></i>
-                    <span class="nav-link-text">Tables</span>
+                    <span class="nav-link-text">Profile Look</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">

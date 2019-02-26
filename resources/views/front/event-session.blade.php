@@ -43,7 +43,7 @@ End Fixed Navigation
 				<h2>Event & Sessions</h2>
 				<ol class="breadcrumb header-bradcrumb">
 				  <li><a href="/home">Home</a></li>
-				  <li class="active">Easy Pricing</li>
+				  <li class="active">Event-Session</li>
 				</ol>
 			</div>
 		</div>

@@ -13,4 +13,8 @@ class StartupController extends Controller
     public function menteeapplyform(){
         return view('startupview.menteeapplyform');
     }
+    public function mouform()
+    {
+        return view('startupview.mouform');
+    }
 }
