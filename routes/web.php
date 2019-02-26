@@ -76,5 +76,7 @@ Route::get('/admin/investor-inital','InvestorController@index');
 
 
 // service provider routes divyam
-Route::get('/admin/servviceprovider-inital','ServiceprovController@index');
-
+//Route::get('/admin/servviceprovider-inital','ServiceprovController@index');
+//edited by Divyam
+Route::resource('data_repository','DataRepController');
+Route::get('/data_repository/download/{id}', 'DataRepController@download')->name('downloadfile');

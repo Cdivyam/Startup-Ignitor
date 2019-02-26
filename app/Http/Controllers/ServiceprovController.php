@@ -8,6 +8,7 @@ class ServiceprovController extends Controller
 {
     public function index()
     {
-        return view('serviceprovview.index');
+        //edited by divyam. Anyone Can edit
+        return view('dataRep.home');
     }
 }
