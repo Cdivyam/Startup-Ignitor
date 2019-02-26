@@ -1,4 +1,4 @@
-@extends('serviceprovview.app')
+@extends('stakeholders.app')
 
 @section('content')
 
