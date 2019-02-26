@@ -42,8 +42,18 @@
                     <span class="nav-link-text">Forums</span>
                 </a>
             </li>
-           
-           
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+                <a class="nav-link" href="{{ url('/data_repository/create') }}">
+                    <i class="fa fa-fw fa-table"></i>
+                    <span class="nav-link-text">create repository</span>
+                </a>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+                <a class="nav-link" href="{{ url('/data_repository') }}">
+                    <i class="fa fa-fw fa-table"></i>
+                    <span class="nav-link-text">your uploads</span>
+                </a>
+            </li>
             
         </ul>
         <ul class="navbar-nav sidenav-toggler">
