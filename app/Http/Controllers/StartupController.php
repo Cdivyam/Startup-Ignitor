@@ -30,4 +30,13 @@ class StartupController extends Controller
     {
         return view('startupview.list_stakeholders');
     }
+    public function ongoingconnection(){
+        return view('startupview.ongoingconnection');
+    }
+    public function videocall(){
+        return view('startupview.videocall');
+    }
+    public function chat(){
+        return view('startupview.chat');
+    }
 }

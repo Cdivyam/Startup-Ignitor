@@ -24,17 +24,27 @@ Route::get('/tutorial', 'PagesController@tutorial');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-// mentee routes sanya
+//Stakeholder routes sanya
 Route::get('/admin/Startup-inital','StartupController@index');
-Route::get('/stakeholdersindex','StakeholderController@registration1');
 Route::get('/stakeholdersprofile','StakeholderController@stakeholdersprofile');
 Route::get('/reglvl1','StakeholderController@reglvl1');
+Route::get('/reglvl2','StakeholderController@reglvl2');
+Route::get('/profile','StakeholderController@profile');
+
 
 
 
 // Mentor routes tanya
 Route::get('/mouform','StartupController@mouform');
 Route::get('/menteeapplyform', 'StartupController@menteeapplyform');
+Route::get('/ongoingconnection', 'StartupController@ongoingconnection');
+Route::get('/videocall', 'StartupController@videocall');
+Route::get('/chat', 'StartupController@chat');
+
+
+
+
+
 Route::get('/admin/mentor-inital','MentorController@index');
 
 

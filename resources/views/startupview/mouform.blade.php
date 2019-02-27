@@ -1,16 +1,17 @@
 @extends('startupview.app')
 
 @section('content')
-
   <div class="content-wrapper">
     <div class="container-fluid">
+      <div class="bg-image"></div>
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="index.html">Dashboard</a>
+          <a href="index.html">HOME</a>
         </li>
-        <li class="breadcrumb-item active">Blank Page</li>
+        <li class="breadcrumb-item active"><a href="#">MEMORANDUM OF UNDERSTANDING</a></li>
       </ol>
+      <div class="container">
       <div class="row">
         <div class="col-12">
           <h1>Memorandum of Understanding</h1>
@@ -51,7 +52,7 @@
             </div>
           </div>
           </div>
-          
+      </div>   
           
         </div>
       </div>
