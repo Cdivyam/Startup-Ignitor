@@ -17,6 +17,7 @@
   background: #555; 
 }</style>
 <!-- Navigation-->
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <a class="navbar-brand" href="{{ url('/admin') }}">StartUp Ignitor</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,18 +42,24 @@
 
                     <span class="nav-link-text">Registration</span><br>
 
+                        <span class="nav-link-text">Dashboard</span>
+
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Acceptance">
                 <a class="nav-link" href="{{ url('/mouform') }}">
+                    <i class="fa fa-fw fa-area-chart"></i>
+
+                    <span class="nav-link-text">List mentors</span>
+
                     <i class="fa fa-pencil-square-o"></i>
 
                     <!--<span class="nav-link-text">List mentors</span>-->
                     <span class="nav-link-text">Agreement</span>
 
                 </a>
-            </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="List of Stacholder">
+            </li> 
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
                 <a class="nav-link" href="{{ url('/admin/tables') }}">
                     <i class="fa fa-fw fa-table"></i>
                     <span class="nav-link-text">List stakeholders</span>
@@ -83,10 +90,10 @@
                 </a>
                 <ul class="sidenav-second-level collapse" id="collapseExamplePages">
                     <li>
-                        <a href="{{ url('/admin/login') }}">Chats</a>
+                        <a href="{{ url('/chat') }}">Chats</a>
                     </li>
                     <li>
-                        <a href="{{ url('/admin/register') }}">Video Call</a>
+                        <a href="{{ url('/videocall') }}">Video Call</a>
                     </li>
                     <li>
                         <a href="{{ url('/admin/register') }}">Forums</a>
@@ -98,8 +105,8 @@
             </li>
             
             
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Ongoing Connection">
-                <a class="nav-link" href="{{ url('/admin/tables') }}">
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+                <a class="nav-link" href="{{ url('/ongoingconnection') }}">
                     <i class="fa fa-fw fa-table"></i>
                     <span class="nav-link-text">Ongoing Connection</span>
                 </a>

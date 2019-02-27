@@ -11,7 +11,7 @@
           </button>
           <!-- /responsive nav button -->
           <!-- logo -->
-          <a class="navbar-brand logo" href="index.html">
+          <a class="navbar-brand logo" href="/">
              <img class="logo-default" src="bingoimages/logo.png" alt="logo" />
              <img class="logo-white" src="bingoimages/logo-white.png" alt="logo" />
           </a>

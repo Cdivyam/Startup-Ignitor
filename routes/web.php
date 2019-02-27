@@ -37,6 +37,14 @@ Route::get('/profile','StakeholderController@profile');
 // Mentor routes tanya
 Route::get('/mouform','StartupController@mouform');
 Route::get('/menteeapplyform', 'StartupController@menteeapplyform');
+Route::get('/ongoingconnection', 'StartupController@ongoingconnection');
+Route::get('/videocall', 'StartupController@videocall');
+Route::get('/chat', 'StartupController@chat');
+
+
+
+
+
 Route::get('/admin/mentor-inital','MentorController@index');
 
 

@@ -14,6 +14,8 @@
     <link href="{{ asset('/vendor/') }}/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> <!-- latest 5.0.13 june 2018, needs update -->
     <!-- Custom styles for this template-->
     <link href="{{ asset('/css/') }}/sb-admin.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="chat.css">
 </head>
 
 @isset($bodyclass)
