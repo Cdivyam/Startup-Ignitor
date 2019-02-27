@@ -16,6 +16,7 @@
     <link href="{{ asset('/css/') }}/sb-admin.css" rel="stylesheet">
 
     <link rel="stylesheet" href="chat.css">
+    
 </head>
 
 @isset($bodyclass)
