@@ -1,33 +1,31 @@
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand" href="{{ url('/admin') }}">Start Bootstrap</a>
+    <a class="navbar-brand" href="{{ url('/admin/Startup-inital') }}">Startup Ignitor</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-                <a class="nav-link" href="{{ url('/menteeapplyform') }}">
+                <a class="nav-link" href="{{ url('/dashboard') }}">
                     <i class="fa fa-fw fa-dashboard"></i>
-<<<<<<< Updated upstream
+
                     <span class="nav-link-text">Dashboard</span>
-=======
-                    <span class="nav-link-text">Multi</span>
->>>>>>> Stashed changes
+
+                   
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-                <a class="nav-link" href="{{ url('/mouform') }}">
+                <a class="nav-link" href="{{ url('/list_mentors') }}">
                     <i class="fa fa-fw fa-area-chart"></i>
-<<<<<<< Updated upstream
+
                     <span class="nav-link-text">List mentors</span>
-=======
-                    <span class="nav-link-text">Mou</span>
->>>>>>> Stashed changes
+
+                    
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-                <a class="nav-link" href="{{ url('/admin/tables') }}">
+                <a class="nav-link" href="{{ url('/list_stakeholders') }}">
                     <i class="fa fa-fw fa-table"></i>
                     <span class="nav-link-text">List stakeholders</span>
                 </a>
