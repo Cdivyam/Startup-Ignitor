@@ -54,12 +54,12 @@
                 @if (Route::has('login'))
                 
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                         <li><a href="{{ url('/home') }}">Home</a></li>
                     @else
-                        <li><a><button type="button" class="btn btn-success" data-toggle="modal" data-target="#mylogin">Login</button></a></li>
+                        <li><a href="/login">Login</button></a></li>
                         {{-- <a href="{{ route('login') }}"> --}}
                         @if (Route::has('register'))
-                            <li><a data-toggle="modal" data-target="#myreg">Register</a></li>
+                            <li><a href="/register">Register</a></li>
                             {{-- <a href="{{ route('register') }}"> --}}
                         @endif
                     @endauth

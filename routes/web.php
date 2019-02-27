@@ -25,7 +25,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 // mentee routes sanya
-Route::get('/admin/Startup-inital','StartupController@index');
+Route::get('/admin/Startup-inital','StartupController@index')->name('startup.auth');
 Route::get('/stakeholdersindex','StakeholderController@registration1');
 Route::get('/stakeholdersprofile','StakeholderController@stakeholdersprofile');
 Route::get('/reglvl1','StakeholderController@reglvl1');
@@ -35,7 +35,7 @@ Route::get('/reglvl1','StakeholderController@reglvl1');
 // Mentor routes tanya
 Route::get('/mouform','StartupController@mouform');
 Route::get('/menteeapplyform', 'StartupController@menteeapplyform');
-Route::get('/admin/mentor-inital','MentorController@index');
+Route::get('/admin/mentor-inital','MentorController@index')->name('mentor.auth');
 
 
 
@@ -50,7 +50,7 @@ Route::get('/data_repository/download/{id}', 'DataRepController@download')->name
 Route::get('/stakeholdersindex','StakeholderController@registration1');
 Route::get('/stakeholdersprofile','StakeholderController@stakeholdersprofile');
 Route::get('/reglvl1','StakeholderController@reglvl1');
-Route::get('/admin/stakeholder-inital','StakeholderController@index');
+Route::get('/admin/stakeholder-inital','StakeholderController@index')->name('stakeholder.auth');
 // service provider routes divyam
 //Route::get('/admin/servviceprovider-inital','ServiceprovController@index');
 //edited by Divyam

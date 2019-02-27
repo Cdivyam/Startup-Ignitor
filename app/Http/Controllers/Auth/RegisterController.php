@@ -28,7 +28,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo ;
 
     /**
      * Create a new controller instance.
@@ -67,6 +67,17 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
+            'sellist' => $data['sellist'],
         ]);
+    }
+    protected function registered($request, $user)
+    {
+        if($user->sellist=='Startup'){
+            return redirect()->route('startup.auth') ;
+        }elseif($user->sellist=='Mentor'){
+            return redirect()->route('mentor.auth') ;
+        }elseif($user->sellist=='Stakeholder'){
+            return redirect()->route('stakeholder.auth') ;
+        }
     }
 }
