@@ -133,7 +133,7 @@ End Fixed Navigation
 			<div class="col-md-12">
 				<h2>Startup Ecosystem</h2>
 				<ol class="breadcrumb header-bradcrumb">
-				  <li><a href="{{ URL::to('/home') }}">Home</a></li>
+				  <li><a href="{{ URL::to('/') }}">Home</a></li>
 				  <li class="active">Ecosystem</li>
 				</ol>
 			</div>

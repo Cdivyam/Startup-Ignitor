@@ -42,7 +42,7 @@ End Fixed Navigation
 			<div class="col-md-12">
 				<h2>Connect to this platform</h2>
 				<ol class="breadcrumb header-bradcrumb">
-				  <li><a href="index.html">Home</a></li>
+				  <li><a href="/">Home</a></li>
 				  <li class="active">Connect</li>
 				</ol>
 			</div>
@@ -104,8 +104,8 @@ End Fixed Navigation
 			</div><!-- END COL -->
 		  </div>
 		</div>
-	  </div>    <!-- End row -->
-	</div>    <!-- End container -->
+	</div>    <!-- End row -->
+</div>    <!-- End container -->
   </section>
 @include('includes.footer')
 
