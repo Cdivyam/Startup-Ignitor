@@ -42,20 +42,22 @@
 
                     <span class="nav-link-text">Registration</span><br>
 
-                        <span class="nav-link-text">Dashboard</span>
-
+                        
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Acceptance">
-                <a class="nav-link" href="{{ url('/mouform') }}">
+                <a class="nav-link" href="{{ url('/list_mentors') }}">
                     <i class="fa fa-fw fa-area-chart"></i>
 
                     <span class="nav-link-text">List mentors</span>
-
+                </a>   
+            </li> 
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Acceptance">       
+                    <!--<span class="nav-link-text">List mentors</span>-->
+                    <a class="nav-link" href="{{ url('/mouform') }}">
                     <i class="fa fa-pencil-square-o"></i>
 
-                    <!--<span class="nav-link-text">List mentors</span>-->
-                    <span class="nav-link-text">Agreement</span>
+                    <span class="nav-link-text">&nbsp;Agreement</span>
 
                 </a>
             </li> 
