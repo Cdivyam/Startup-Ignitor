@@ -1,4 +1,23 @@
+<style>::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}</style>
 <!-- Navigation-->
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <a class="navbar-brand" href="{{ url('/admin') }}">Start Bootstrap</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -7,28 +26,49 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
-                <a class="nav-link" href="{{ url('/menteeapplyform') }}">
+                <a class="nav-link" href="{{ url('/dashboard') }}">
                     <i class="fa fa-fw fa-dashboard"></i>
 
                     <span class="nav-link-text">Dashboard</span>
-                   
+=======
+                    <span class="nav-link-text">Multi</span>
+>>>>>>> Stashed changes
                 </a>
             </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-                <a class="nav-link" href="{{ url('/mouform') }}">
+                   
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+                <a class="nav-link" href="{{ url('/menteeapplyform') }}">
+                        <i class="fa fa-fw fa-dashboard"></i>
+                    <span class="nav-link-text">Registration</span><br>
+                </a>
+            </li>
+
+           
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Acceptance">
+                <a class="nav-link" href="{{ url('/list_mentors') }}">
                     <i class="fa fa-fw fa-area-chart"></i>
 
                     <span class="nav-link-text">List mentors</span>
+                </a>   
+            </li> 
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Acceptance">       
+                    <!--<span class="nav-link-text">List mentors</span>-->
+                    <a class="nav-link" href="{{ url('/mouform') }}">
+                    <i class="fa fa-pencil-square-o"></i>
 
+                    <span class="nav-link-text">&nbsp;Agreement</span>
+
+
+                    
                 </a>
-            </li>
+            </li> 
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-                <a class="nav-link" href="{{ url('/admin/tables') }}">
+                <a class="nav-link" href="{{ url('/list_stakeholders') }}">
                     <i class="fa fa-fw fa-table"></i>
                     <span class="nav-link-text">List stakeholders</span>
                 </a>
             </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="My Applications">
                 <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa-wrench"></i>
                     <span class="nav-link-text">My Applications</span>
@@ -46,17 +86,17 @@
                 </ul>
             </li>
             
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="My Network">
                 <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa-file"></i>
-                    <span class="nav-link-text">My network</span>
+                    <span class="nav-link-text">My Network</span>
                 </a>
                 <ul class="sidenav-second-level collapse" id="collapseExamplePages">
                     <li>
-                        <a href="{{ url('/admin/login') }}">Chats</a>
+                        <a href="{{ url('/chat') }}">Chats</a>
                     </li>
                     <li>
-                        <a href="{{ url('/admin/register') }}">Video Call</a>
+                        <a href="{{ url('/videocall') }}">Video Call</a>
                     </li>
                     <li>
                         <a href="{{ url('/admin/register') }}">Forums</a>
@@ -69,7 +109,7 @@
             
             
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-                <a class="nav-link" href="{{ url('/admin/tables') }}">
+                <a class="nav-link" href="{{ url('/ongoingconnection') }}">
                     <i class="fa fa-fw fa-table"></i>
                     <span class="nav-link-text">Ongoing Connection</span>
                 </a>

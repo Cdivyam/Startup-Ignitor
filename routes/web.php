@@ -29,6 +29,9 @@ Route::get('/admin/Startup-inital','StartupController@index')->name('startup.aut
 Route::get('/stakeholdersindex','StakeholderController@registration1');
 Route::get('/stakeholdersprofile','StakeholderController@stakeholdersprofile');
 Route::get('/reglvl1','StakeholderController@reglvl1');
+Route::get('/reglvl2','StakeholderController@reglvl2');
+Route::get('/profile','StakeholderController@profile');
+
 
 
 
@@ -36,6 +39,9 @@ Route::get('/reglvl1','StakeholderController@reglvl1');
 Route::get('/mouform','StartupController@mouform');
 Route::get('/menteeapplyform', 'StartupController@menteeapplyform');
 Route::get('/admin/mentor-inital','MentorController@index')->name('mentor.auth');
+Route::get('/chat', 'StartupController@chat');
+Route::get('/videocall', 'StartupController@videocall');
+Route::get('/ongoingconnection', 'StartupController@ongoingconnection');
 
 
 
@@ -51,6 +57,9 @@ Route::get('/stakeholdersindex','StakeholderController@registration1');
 Route::get('/stakeholdersprofile','StakeholderController@stakeholdersprofile');
 Route::get('/reglvl1','StakeholderController@reglvl1');
 Route::get('/admin/stakeholder-inital','StakeholderController@index')->name('stakeholder.auth');
+Route::get('/list_stakeholders','StartupController@list_stakeholders');
+Route::get('/list_mentors','StartupController@list_mentors');
+Route::get('/dashboard','StartupController@dashboard');
 // service provider routes divyam
 //Route::get('/admin/servviceprovider-inital','ServiceprovController@index');
 //edited by Divyam

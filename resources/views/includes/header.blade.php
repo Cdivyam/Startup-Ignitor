@@ -11,7 +11,7 @@
           </button>
           <!-- /responsive nav button -->
           <!-- logo -->
-          <a class="navbar-brand logo" href="index.html">
+          <a class="navbar-brand logo" href="/">
              <img class="logo-default" src="bingoimages/logo.png" alt="logo" />
              <img class="logo-white" src="bingoimages/logo-white.png" alt="logo" />
           </a>
@@ -24,7 +24,7 @@
                 <li class="dropdown">
                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ecosystem <span class="caret"></span></a>
                    <ul class="dropdown-menu">
-                      <li><a href="/about-ecosystem">about</a></li>
+                      <li><a href="/about-ecosystem">About</a></li>
                       <li><a href="/how-to">Spread Out</a></li>
                    </ul>
                 </li>
@@ -141,13 +141,13 @@
                   </div> <!-- form-group end.// -->
                    <div class="form-group input-group">
                         <div class="input-group-addon">
-                           <span class="glyphicon glyphicon-envelope"></span> 
+                           <span class="glyphicon glyphicon-asterisk"></span> 
                         </div>
                        <input class="form-control" placeholder="Create password" type="password">
                    </div> <!-- form-group// -->
                    <div class="form-group input-group">
                         <div class="input-group-addon">
-                           <span class="glyphicon glyphicon-envelope"></span> 
+                           <span class="glyphicon glyphicon-asterisk"></span> 
                         </div>
                        <input class="form-control" placeholder="Repeat password" type="password">
                    </div> <!-- form-group// -->                                      

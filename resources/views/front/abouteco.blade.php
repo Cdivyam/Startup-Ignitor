@@ -133,7 +133,7 @@ End Fixed Navigation
 			<div class="col-md-12">
 				<h2>Startup Ecosystem</h2>
 				<ol class="breadcrumb header-bradcrumb">
-				  <li><a href="{{ URL::to('/home') }}">Home</a></li>
+				  <li><a href="{{ URL::to('/') }}">Home</a></li>
 				  <li class="active">Ecosystem</li>
 				</ol>
 			</div>
@@ -224,93 +224,7 @@ End Fixed Navigation
 
 
 
-<section class="services" id="services">
-    <div class="container">
-        <div class="row">
-            
-            <!-- section title -->
-            <div class="title text-center">
-                <h2>Government Schemes</h2>
-                <p>Vestibulum nisl tortor, consectetur quis imperdiet bibendum, laoreet sed arcu. Sed condimentum iaculis ex, in faucibus lorem accumsan non. Donec mattis tincidunt metus. Morbi sed tortor a risus luctus dignissim.</p>
-                <div class="border"></div>
-            </div>
-            <!-- /section title -->
-            
-            <!-- Single Service Item -->
-            <div class="col-md-4 col-sm-6 col-xs-12  no-padding">
-                <div class="service-block color-bg text-center">
-                    <div class="service-icon text-center">
-                        <i class="tf-ion-ios-copy-outline"></i>
-                    </div>
-                    <h3>Scheme 1</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
-                </div>
-            </div>
-            <!-- End Single Service Item -->
-            
-            <!-- Single Service Item -->
-            <div class="col-md-4 col-sm-6 col-xs-12  no-padding">
-                <div class="service-block text-center">
-                    <div class="service-icon text-center">
-                        <i class="tf-ion-ios-alarm-outline"></i>
-                    </div>
-                    <h3>Scheme 2</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
-                </div>
-            </div>
-            <!-- End Single Service Item -->
-            
-            <!-- Single Service Item -->
-            <div class="col-md-4 col-sm-6 col-xs-12  no-padding">
-                <div class="service-block color-bg text-center">
-                    <div class="service-icon text-center">
-                        <i class="tf-ion-ios-book-outline"></i>
-                    </div>
-                    <h3>Scheme 3</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
-                </div>
-            </div>
-            <!-- End Single Service Item -->
-            
-            <!-- Single Service Item -->
-            <div class="col-md-4 col-sm-6 col-xs-12  no-padding">
-                <div class="service-block  text-center">
-                    <div class="service-icon text-center">
-                        <i class="tf-ion-ios-briefcase-outline"></i>
-                    </div>
-                    <h3>Scheme 4</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
-                </div>
-            </div>
-            <!-- End Single Service Item -->
-            
-            <!-- Single Service Item -->
-            <div class="col-md-4 col-sm-6 col-xs-12  no-padding">
-                <div class="service-block color-bg text-center">
-                    <div class="service-icon text-center">
-                        <i class="tf-ion-ios-crop"></i>
-                    </div>
-                    <h3>Scheme 5</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
-                </div>
-            </div>
-            <!-- End Single Service Item -->
-            
-            <!-- Single Service Item -->
-            <div class="col-md-4 col-sm-6 col-xs-12  no-padding">
-                <div class="service-block text-center">
-                    <div class="service-icon text-center">
-                        <i class="tf-ion-ios-home-outline"></i>
-                    </div>
-                    <h3>Scheme 6</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur.. Sed id lorem eget orci dictum facilisis vel id tellus. Nullam iaculis arcu at mauris dapibus consectetur.</p>
-                </div>
-            </div>
-            <!-- End Single Service Item -->
-                
-        </div> 		<!-- End row -->
-    </div>   	<!-- End container -->
-</section>
+
 
 
 

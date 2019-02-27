@@ -15,6 +15,9 @@ class StakeholderController extends Controller
     public function reglvl1(){
     	return view('stakeholders.reglvl1');
     }
+    public function reglvl2(){
+    	return view('stakeholders.reglvl2');
+    }
     public function index(){
         return view('stakeholders.index');
     }

@@ -12,21 +12,19 @@
         <li class="breadcrumb-item active"></li>
       </ol>
       <div class="row">
-        <div class="col-12">
-          <h1>Registration 1</h1>
-          <p align="center">Time to update your profile</p>
-        </div>
-      </div>
+              </div>
     </div>
     <!-- /.container-fluid-->
 
         <!DOCTYPE html>
         <html>
-<!--         <meta name="viewport" content="width=device-width, initial-scale=1.0"><! --><link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <style>
         * {
           box-sizing: border-box;
         }
+
         body {
           background-color: #f1f1f1;
         }
@@ -108,80 +106,35 @@
         <body>
 
         <form id="regForm" action="" style="background-color: #E6E6FA">
-          <!-- <h1>Registration 1:</h1>
-          <h2>Time to update your registration...</h2> -->
-          <!-- One "tab" for each step in the form: -->
-          <div >Name:
-            <p><input placeholder= "(First)(Middle)(Last)"oninput="this.className = ''" name="name" size="78"></p>
-          </div>
-          <div>Email Id
-            <p><input placeholder="Eg: name@gmail.com" oninput="this.className = ''" name="email"size="78"></p>
-          </div>
-          <div>Phone Number:
-          <p><input type="phone" placeholder="eg: 5852445512" oninput="this.className = ''" name="phone"size="78"></p>
-          </div>
-           <div>Specialization Role:
-            <p>
-           <div class="radio">
-            <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios1" value="incubator" checked>Incubator
-            </label>
-            </div>
-            <div class="radio">
-            <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios2" value="accelerator">Accelerator
-            </label>
-            </div>
-            <div class="radio">
-            <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios3" value="Investor">Investor
-            </label>
-            </div>
-             <div class="radio">
-            <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios4" value="service provider">Service Provider
-            </label>
-            </div>
-          </p>
-          </div>
-          <div>Organisation Name
-            <p><input placeholder="Eg: Thakur Trust" oninput="this.className = ''" name="orgname" size="78"></p>
-          </div>
-           <div>Organisation Location
-            <p><input placeholder="Eg: Mumbai,Maharashtra" oninput="this.className = ''" name="orgloc"size="78"></p>
-          </div>
+          
+          <h1>Registration 2:</h1>
+          <h2>Time to complete your registration..</h2>
+          <h3>You'll require to upload documents in here</h3>
+          <br>
+          <br>
+          <br>
+          <br>
+         <div>Upload Your Photo:
+            <p><input type="file" accept="image" oninput="this.className = ''" name="photo1" size="70"></p>
+          </div>  
+           <div>Upload Your Organisation Certificate:
+            <p><input type="file" accept="document" oninput="this.className = ''" name="photo2" size="70"></p>
+          </div>  
+           <div>Upload Your Aproval letter:
+            <p><input type="file" accept="document" oninput="this.className = ''" name="photo3" size="70"></p>
+          </div> 
 
-            
-            <div class="form-group">
-              <label for="comment">About Yourself</label>
-              <p>
-              <textarea class="form-control" rows="5" id="About"></textarea>
-            </p>
-            </div>
-             <div  class="form-group" 
-              <label for="comment">How can you help?</label>
-              <p>
-              <textarea class="form-control" rows="5" size="90" id="help" ></textarea>
-            </p>
-            </div>
-
-            <a href="reglvl2">
-            <button type="button" class="btn btn-success btn-circle"> Next<i class="fa fa-link"></i></button>
+          <a href="profile look">
+            <button type="button" class="btn btn-success btn-primary"> Skip<i class="fa fa-link"></i></button>
             </a> 
-         <!--  
-          <div style="overflow:auto;">
-            <div style="float:right;">
-              <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-              <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-            </div>
-          </div>
-          Circles which indicates the steps of the form: -->
-          <!-- <div style="text-align:center;margin-top:40px;">
-            <span class="step"></span>
-            <span class="step"></span>
-            <span class="step"></span>
-          </div> -->
-        </body>  
+            <a href="profile">
+            <button type="button" class="btn btn-success btn-circle"> Submit<i class="fa fa-link"></i></button>
+            </a>
+
+          <br>
+          <br>
+          <br>
+          <br>  
         </form>
         <!--
         <script>
