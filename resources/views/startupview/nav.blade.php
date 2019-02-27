@@ -30,18 +30,17 @@
                     <i class="fa fa-fw fa-dashboard"></i>
 
                     <span class="nav-link-text">Dashboard</span>
-
-                   
-
-                    <!--<span class="nav-link-text">Dashboard</span>-->
-
-                    <span class="nav-link-text">Registration</span><br>
-
-                        
                 </a>
             </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-                <a class="nav-link" href="{{ url('/list_mentors') }}">
+                   
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+                <a class="nav-link" href="{{ url('/menteeapplyform') }}">
+                        <i class="fa fa-fw fa-dashboard"></i>
+                    <span class="nav-link-text">Registration</span><br>
+                </a>
+            </li>
+
+           
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Acceptance">
                 <a class="nav-link" href="{{ url('/list_mentors') }}">
                     <i class="fa fa-fw fa-area-chart"></i>
