@@ -43,15 +43,20 @@ Route::get('/chat', 'StartupController@chat');
 Route::get('/videocall', 'StartupController@videocall');
 Route::get('/ongoingconnection', 'StartupController@ongoingconnection');
 
+//Mentor Routes _Divyam
+Route::get('/admin/{id}/uploads', 'MentorController@uploads');
 
 
 
 
 
 
-
+//DataRepository Routes _Divyam
 Route::resource('data_repository','DataRepController');
 Route::get('/data_repository/download/{id}', 'DataRepController@download')->name('downloadfile');
+
+
+
 //stakeholder routes
 Route::get('/stakeholdersindex','StakeholderController@registration1');
 Route::get('/stakeholdersprofile','StakeholderController@stakeholdersprofile');
@@ -63,3 +68,4 @@ Route::get('/dashboard','StartupController@dashboard');
 // service provider routes divyam
 //Route::get('/admin/servviceprovider-inital','ServiceprovController@index');
 //edited by Divyam
+Route::get('/admin/stakeholder-inital','StakeholderController@index');
