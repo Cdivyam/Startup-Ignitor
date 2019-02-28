@@ -15,13 +15,13 @@
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
                 <a class="nav-link" href="{{ url('/admin/charts') }}">
                     <i class="fa fa-fw fa-area-chart"></i>
-                    <span class="nav-link-text">Applications</span>
+                    <span class="nav-link-text">My Applications</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
                 <a class="nav-link" href="{{ url('/admin/charts') }}">
                     <i class="fa fa-fw fa-area-chart"></i>
-                    <span class="nav-link-text">blacklists</span>
+                    <span class="nav-link-text">Blacklists</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
@@ -33,7 +33,7 @@
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
                 <a class="nav-link" href="{{ url('/admin/tables') }}">
                     <i class="fa fa-fw fa-table"></i>
-                    <span class="nav-link-text">my stats</span>
+                    <span class="nav-link-text">My Stats</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">

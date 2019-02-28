@@ -35,7 +35,7 @@
                    
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
                 <a class="nav-link" href="{{ url('/menteeapplyform') }}">
-                        <i class="fa fa-fw fa-dashboard"></i>
+                        <i class="fa fa-fw fa-sign-in"></i>
                     <span class="nav-link-text">Registration</span><br>
                 </a>
             </li>

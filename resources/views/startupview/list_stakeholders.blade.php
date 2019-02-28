@@ -1,12 +1,11 @@
 
 @extends('admin.layouts.dashboard')
 
-@section('page_heading','Tables')
+@section('page_heading','Tables') 
 
 @section('section')
 
-
-        <div class="row">
+       <div class="row">
             <div class="col-sm-12">
                 @component('admin.widgets.panel')
                     @slot('panelTitle', 'Coloured Table')
@@ -72,5 +71,7 @@
           </div>
         </div>
       </footer>
+    
 
-@endsection
+@endsection 
+
