@@ -67,6 +67,10 @@ Route::get('/dashboard','StartupController@dashboard');
 Route::get('/list_mentors','StartupController@list_mentors');
 Route::get('/list_stakeholders','StartupController@list_stakeholders');
 
+
+ 
+
+
 // service provider routes divyam
 //Route::get('/admin/servviceprovider-inital','ServiceprovController@index');
 //edited by Divyam
