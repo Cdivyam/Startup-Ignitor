@@ -1,5 +1,5 @@
 
-<header class="navigation navbar navbar-fixed-top ">
+<header class="navigation navbar navbar-fixed-top " style>
     <div class="container">
        <div class="navbar-header">
           <!-- responsive nav button -->
@@ -12,8 +12,8 @@
           <!-- /responsive nav button -->
           <!-- logo -->
           <a class="navbar-brand logo" href="/">
-             <img class="logo-default" src="bingoimages/logo.png" alt="logo" />
-             <img class="logo-white" src="bingoimages/logo-white.png" alt="logo" />
+             <img class="logo-default" src="bingoimages/logo_greeno1.png" alt="logo" width="170px" height="55px"/>
+             <img class="logo-white" src="bingoimages/logo_greeno1.png" alt="logo" width="170px" height="55px" />
           </a>
           <!-- /logo -->
        </div>

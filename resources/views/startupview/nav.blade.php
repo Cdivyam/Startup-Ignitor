@@ -30,9 +30,7 @@
                     <i class="fa fa-fw fa-dashboard"></i>
 
                     <span class="nav-link-text">Dashboard</span>
-=======
-                    <span class="nav-link-text">Multi</span>
->>>>>>> Stashed changes
+
                 </a>
             </li>
                    
