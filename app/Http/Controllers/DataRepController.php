@@ -6,9 +6,14 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use App\DataRepository;
 use DB;
+use App\Mentor;
 
 class DataRepController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -63,7 +68,7 @@ class DataRepController extends Controller
         $data->sector = $request->input('sector');
         $data->link = $fileNameToStore;
         $data->save();
-        return redirect('/data_repository')->with('success', 'Post Created'); 
+        return redirect('/data_repository')->with('success', 'Repository Created'); 
     }
 
     /**
@@ -74,8 +79,8 @@ class DataRepController extends Controller
      */
     public function show($id)
     {
-        $datas = DataRepository::find($id);
-        return view('dataRep.show')->with('datas',$datas);
+        // $datas = Mentor::find($id);
+        // return view('dataRep.show')->with('datas',$datas);
     }
 
     /**

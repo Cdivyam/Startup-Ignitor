@@ -105,7 +105,7 @@
 @include('includes.head')
 
 <body id="body">
-
+	@include('includes.bot')
     <style>
         /* body {
           font-family: Arial, Helvetica, sans-serif;
