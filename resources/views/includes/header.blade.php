@@ -1,5 +1,5 @@
 
-<header class="navigation navbar navbar-fixed-top ">
+<header class="navigation navbar navbar-fixed-top " style>
     <div class="container">
        <div class="navbar-header">
           <!-- responsive nav button -->
@@ -12,8 +12,8 @@
           <!-- /responsive nav button -->
           <!-- logo -->
           <a class="navbar-brand logo" href="/">
-             <img class="logo-default" src="bingoimages/logo.png" alt="logo" />
-             <img class="logo-white" src="bingoimages/logo-white.png" alt="logo" />
+             <img class="logo-default" src="bingoimages/logo_greeno1.png" alt="logo" width="170px" height="55px"/>
+             <img class="logo-white" src="bingoimages/logo_greeno1.png" alt="logo" width="170px" height="55px" />
           </a>
           <!-- /logo -->
        </div>
@@ -54,12 +54,12 @@
                 @if (Route::has('login'))
                 
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                         <li><a href="{{ url('/home') }}">Home</a></li>
                     @else
-                        <li><a><button type="button" class="btn btn-success" data-toggle="modal" data-target="#mylogin">Login</button></a></li>
+                        <li><a href="/login">Login</button></a></li>
                         {{-- <a href="{{ route('login') }}"> --}}
                         @if (Route::has('register'))
-                            <li><a data-toggle="modal" data-target="#myreg">Register</a></li>
+                            <li><a href="/register">Register</a></li>
                             {{-- <a href="{{ route('register') }}"> --}}
                         @endif
                     @endauth

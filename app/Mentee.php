@@ -4,16 +4,13 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class DataRepository extends Model
+class Mentee extends Model
 {
     //Table
-    protected $table = 'data_repository';
+    protected $table = 'mentee';
     //Primary key
     public $primaryKey = 'id';
     //TimeStamps
     public $timestamps = true;
-
-    public function mentor() {
-        return $this->belongsTo('App\Mentor');
-    }
+    
 }

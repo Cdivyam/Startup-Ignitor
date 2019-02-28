@@ -32,6 +32,7 @@
                     <i class="fa fa-fw fa-dashboard"></i>
 
                     <span class="nav-link-text">Dashboard</span>
+
                 </a>
             </li>
                    
@@ -213,8 +214,13 @@
                 </form>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
-                    <i class="fa fa-fw fa-sign-out"></i>Logout</a>
+                <a class="nav-link" data-toggle="modal" href="{{ route('logout') }}"  onclick="event.preventDefault();
+                document.getElementById('logout-form').submit();">
+   {{ __('Logout') }}
+                    <i class="fa fa-fw fa-sign-out"></i></a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
             </li>
         </ul>
     </div>

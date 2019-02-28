@@ -1,11 +1,11 @@
-@extends('layouts.app')
+@extends('layouts.app', ['bodyclass' => 'bg-dark', 'hidenav' => true])
 
 @section('content')
-<div class="container">
+<div class="container"><br><br>
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card card-default">
-                <div class="card-header">Login</div>
+                <div class="card-header"><h5>LOGIN</h5></div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">

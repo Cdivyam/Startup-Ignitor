@@ -17,7 +17,7 @@ class DataRepository extends Migration
             $table->increments('id');
             $table->string('name');
             $table->mediumText('link');
-            $table->string('created_by');
+            $table->integer('created_by')->nullable();
             $table->string('domain');
             $table->string('sector');
             $table->timestamps();

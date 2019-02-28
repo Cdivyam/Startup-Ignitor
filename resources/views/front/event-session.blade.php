@@ -7,7 +7,7 @@
 @include('includes.head')
 
 <body id="body">
-
+	@include('includes.bot')
  <!--
   Start Preloader
   ==================================== -->
