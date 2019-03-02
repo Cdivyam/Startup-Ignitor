@@ -1,36 +1,36 @@
 <!-- Navigation-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand" href="{{ url('/admin') }}">Start Bootstrap</a>
+    <a class="navbar-brand" href="{{ url('/admin') }}">Startup Ignitor</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Registration">
                 <a class="nav-link" href="{{ url('/stakeholdersindex') }}">
                     <i class="fa fa-fw fa-dashboard"></i>
-                    <span class="nav-link-text">Registration I</span>
+                    <span class="nav-link-text">Registration</span>
                 </a>
             </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Profile">
                 <a class="nav-link" href="{{ url('/admin/charts') }}">
                     <i class="fa fa-fw fa-area-chart"></i>
-                    <span class="nav-link-text">Registration II</span>
-                </a>
-            </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-                <a class="nav-link" href="{{ url('/admin/charts') }}">
-                    <i class="fa fa-fw fa-area-chart"></i>
-                    <span class="nav-link-text">Profile look</span>
-                </a>
-            </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-                <a class="nav-link" href="{{ url('/admin/tables') }}">
-                    <i class="fa fa-fw fa-table"></i>
                     <span class="nav-link-text">Profile Look</span>
                 </a>
             </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="More Like You">
+                <a class="nav-link" href="{{ url('/admin/charts') }}">
+                    <i class="fa fa-fw fa-area-chart"></i>
+                    <span class="nav-link-text">More Like You</span>
+                </a>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Stakeholder Profile">
+                <a class="nav-link" href="{{ url('/admin/tables') }}">
+                    <i class="fa fa-fw fa-table"></i>
+                    <span class="nav-link-text">Stakeholder Profile</span>
+                </a>
+            </li>
+            <!--<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
                 <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa-wrench"></i>
                     <span class="nav-link-text">Components</span>
@@ -44,7 +44,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
+            <!--<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
                 <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseExamplePages" data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa-file"></i>
                     <span class="nav-link-text">Example Pages</span>
@@ -63,8 +63,8 @@
                         <a href="{{ url('/admin/blank') }}">Blank Page</a>
                     </li>
                 </ul>
-            </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
+            </li>-->
+            <!--<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Menu Levels">
                 <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseMulti" data-parent="#exampleAccordion">
                     <i class="fa fa-fw fa-sitemap"></i>
                     <span class="nav-link-text">Menu Levels</span>
@@ -100,7 +100,7 @@
                     <i class="fa fa-fw fa-link"></i>
                     <span class="nav-link-text">Link</span>
                 </a>
-            </li>
+            </li>-->
         </ul>
         <ul class="navbar-nav sidenav-toggler">
             <li class="nav-item">
@@ -190,7 +190,7 @@
             <li class="nav-item">
                 <form class="form-inline my-2 my-lg-0 mr-lg-2">
                     <div class="input-group">
-                        <input class="form-control" type="text" placeholder="Search for...">
+                        <input class="form-control" type="text" placeholder="Search for..." style="padding-top: 6px;  padding-bottom: 6px;  margin-top: 0px;">
                         <span class="input-group-append">
                 <button class="btn btn-primary" type="button">
                   <i class="fa fa-search"></i>

@@ -21,7 +21,7 @@
 <!-- Navigation-->
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand" href="{{ url('/admin') }}">Start Bootstrap</a>
+    <a class="navbar-brand" href="{{ url('/admin') }}">Startup Ignitor</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -204,7 +204,7 @@
             <li class="nav-item">
                 <form class="form-inline my-2 my-lg-0 mr-lg-2">
                     <div class="input-group">
-                        <input class="form-control" type="text" placeholder="Search for...">
+                        <input class="form-control" type="text" placeholder="Search for..."style="margin-top: 0px;">
                         <span class="input-group-append">
                 <button class="btn btn-primary" type="button">
                   <i class="fa fa-search"></i>

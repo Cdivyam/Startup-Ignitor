@@ -24,7 +24,7 @@ Route::get('/tutorial', 'PagesController@tutorial');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-<<<<<<< Updated upstream
+
 // mentee routes sanya
 Route::get('/admin/Startup-inital','StartupController@index')->name('startup.auth');
 Route::get('/stakeholdersindex','StakeholderController@registration1');
@@ -32,7 +32,7 @@ Route::get('/stakeholdersprofile','StakeholderController@stakeholdersprofile');
 Route::get('/reglvl1','StakeholderController@reglvl1');
 Route::get('/reglvl2','StakeholderController@reglvl2');
 Route::get('/profile','StakeholderController@profile');
-=======
+
 //Stakeholder routes sanya
 Route::get('/admin/Startup-inital','StartupController@index'); //not working
 Route::get('/stakeholdersprofile','StakeholderController@stakeholdersprofile'); //working but not con=mplete
@@ -40,7 +40,7 @@ Route::get('/reglvl1','StakeholderController@reglvl1'); //working
 Route::get('/reglvl2','StakeholderController@reglvl2'); //working
 Route::get('/profile','StakeholderController@profile'); //not working, broken
 Route::get('/stakeholderform','StakeholderController@stakeholderform'); //
->>>>>>> Stashed changes
+
 
 
 
