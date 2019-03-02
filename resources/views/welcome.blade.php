@@ -269,7 +269,7 @@ Welcome Slider
                 <a class="menu__link scroll" href="#mentor">
                     <img class="logo-default" src="{{ URL::to('bingoimages/Mentor.png') }}" alt="logo" />
                     <div>
-                        <span class="counter" style="color: white; font-size: 1.5em; line-height: 60%;">INTELLECTUAL</span>
+                        <span class="counter" style="color: white; font-size: 1.5em; line-height: 60%;">MENTOR</span>
                     </div>
                     <h4 style="color: white;">DEDICATED TO GUIDE FUTURE BUSSINESSES</h4>
                 </a>

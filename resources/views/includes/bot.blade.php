@@ -11,7 +11,7 @@
       border-radius: 4px;
       outline: none;
       cursor: pointer;
-      opacity: 0.8;
+      opacity: 0.9;
       position: fixed;
       bottom: 23px;
       right: 28px;
@@ -42,12 +42,12 @@
     .form-container .btn {
       background-color: #4CAF50;
       color: white;
-      padding: 16px 20px;
-      border: none;
+      /* padding: 16px 20px; */
+      /* border: none; */
       cursor: pointer;
       width: 388px;
-      margin-bottom:10px;
-      opacity: 0.8;
+      /* margin-bottom:10px; */
+      opacity: 0.9;
     }
     
     /* Add a red background color to the cancel button */
@@ -79,7 +79,7 @@
             width="350"
             height="430"
             src="https://console.dialogflow.com/api-client/demo/embedded/4ce60952-89ed-48fc-9d21-2631f56996f5">
-        </iframe>
+        </iframe><br><br><br><br>
           <button type="button" class="btn cancel" onclick="closeForm()"  >Close</button>
       </form>
     </div>

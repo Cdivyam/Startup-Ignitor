@@ -17,19 +17,19 @@
           </a>
           <!-- /logo -->
        </div>
-       <div id="google_translate_element"></div>
-
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-}
-</script>
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+       
        <!-- main nav -->
        <nav class="collapse navbar-collapse navbar-right">
           <ul id="nav" class="nav navbar-nav menu">
-                
+                <li><div id="google_translate_element"></div>
+
+                  <script type="text/javascript">
+                  function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+                  }
+                  </script>
+                  
+                  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script></li>
                 <li class="dropdown">
                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ecosystem <span class="caret"></span></a>
                    <ul class="dropdown-menu">
@@ -69,6 +69,7 @@ function googleTranslateElementInit() {
                         {{-- <a href="{{ route('login') }}"> --}}
                         @if (Route::has('register'))
                             <li><a href="/register">Register</a></li>
+                            
                             {{-- <a href="{{ route('register') }}"> --}}
                         @endif
                     @endauth
