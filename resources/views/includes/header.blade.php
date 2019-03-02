@@ -21,7 +21,8 @@
        <!-- main nav -->
        <nav class="collapse navbar-collapse navbar-right">
           <ul id="nav" class="nav navbar-nav menu">
-                <li><div id="google_translate_element"></div>
+                  <br>
+                  <li><div id="google_translate_element"></div>
 
                   <script type="text/javascript">
                   function googleTranslateElementInit() {
