@@ -63,8 +63,9 @@ Route::get('/stakeholdersprofile','StakeholderController@stakeholdersprofile');
 Route::get('/reglvl1','StakeholderController@reglvl1');
 Route::get('/admin/stakeholder-inital','StakeholderController@index')->name('stakeholder.auth');
 Route::get('/list_stakeholders','StartupController@list_stakeholders');
-
+Route::get('/list_mentors','StartupController@list_mentors');
 // service provider routes divyam
 //Route::get('/admin/servviceprovider-inital','ServiceprovController@index');
 //edited by Divyam
 Route::get('/admin/stakeholder-inital','StakeholderController@index');
+Route::post('/admin/reglvl1', 'StakeholderController@store');
