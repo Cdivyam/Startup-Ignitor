@@ -3,7 +3,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="title" style="padding : 0%; margin: 0px;">
-                        <p style="color: white; font-size: 3em;">through the community support </p>
+                        <p style="color: white; font-size: 3em;">Through the community support </p>
                     </div><br>
                 </div>
                 <!-- first count item -->
@@ -14,7 +14,7 @@
                             <div>
                                 <span class="counter" style="color: white; font-size: 1.5em; line-height: 60%;">BUSINESS ENTHUSIAST</span>
                             </div>
-                            <h4 style="color: white;">EAGER TO LEARN ABOUT BUSSINESS AND STARTUPS</h4>
+                            <h4 style="color: white;">EAGER TO LEARN ABOUT BUSINESSES AND STARTUPS</h4>
                         </a>
                     </div>
                 </div>
@@ -28,7 +28,7 @@
                         <div>
                             <span class="counter" style="color: white; font-size: 1.5em; line-height: 60%;">MENTOR</span>
                         </div>
-                        <h4 style="color: white;">DEDICATED TO GUIDE FUTURE BUSSINESSES</h4>
+                        <h4 style="color: white;">DEDICATED TO GUIDE FUTURE BUSINESSES</h4>
                     </a>
                     </div>
                 </div>
