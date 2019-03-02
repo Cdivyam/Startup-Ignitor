@@ -24,13 +24,16 @@
 @endisset
 @empty($bodyclass)
     <body class="fixed-nav sticky-footer bg-dark" id="page-top">
+        
 @endempty
 
 
 @yield('content')
 
+
 @empty($hidenav)
     @include('startupview.nav')
+    
 @endempty
 
 <!-- Bootstrap core JavaScript-->

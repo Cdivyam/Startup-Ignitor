@@ -103,6 +103,35 @@ h1 {
                     <button class="btn" onclick="filterSelection('accelerator')"> Accelerator</button>
                     <button class="btn" onclick="filterSelection('incubator')"> Incubator</button>
                     <button class="btn" onclick="filterSelection('investor')"> Investor</button>
+                    <button class="btn" onclick="filterSelection('serviceprovider')"> Service Provider</button>
+                  </div>
+                  <div class="section">
+                    <div class="container">
+                       
+                       
+                      <div class="column">
+                          Checkbox: <input type="checkbox" id="myAccelerator"  onclick="myFunction()">
+
+                          <div class="column accelerator"  id="text" style="display:none">
+                       
+                              <div class="card border-dark mb-3" style="max-width: 18rem;">
+                                  <div class="card profile-card-2">
+                                          
+                                          <div class="card-body pt-5" class="card-body text-dark">
+                                              <img src="" alt="profile-image" class="profile"/>
+                                              <h5 class="card-title"><a href="#">Name</a></h5>
+                                              <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
+                                              <a href="#" class="btn btn-default">View profile</a>
+                                              <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                                          </div>
+                                  </div>
+                                      </div>
+                              </div>
+                              
+                        
+
+                      </div>
+                    </div>
                   </div>
         <div class="section">
                 <div class="container">
@@ -249,6 +278,68 @@ h1 {
                                                                                 </div>
                                                                                     </div>
                                                                             </div>
+
+                                                                            <div class="column serviceprovider">
+                     
+                                                                            <div class="card border-dark mb-3" style="max-width: 18rem;">
+                                                                                <div class="card profile-card-2">
+                                                                                        
+                                                                                        <div class="card-body pt-5" class="card-body text-dark">
+                                                                                            <img src="" alt="profile-image" class="profile"/>
+                                                                                            <h5 class="card-title"><a href="#">Name</a></h5>
+                                                                                            <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
+                                                                                            <a href="#" class="btn btn-primary">View profile</a>
+                                                                                            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                                                                                        </div>
+                                                                                </div>
+                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="column serviceprovider">
+                     
+                                                                            <div class="card border-dark mb-3" style="max-width: 18rem;">
+                                                                                <div class="card profile-card-2">
+                                                                                        
+                                                                                        <div class="card-body pt-5" class="card-body text-dark">
+                                                                                            <img src="" alt="profile-image" class="profile"/>
+                                                                                            <h5 class="card-title"><a href="#">Name</a></h5>
+                                                                                            <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
+                                                                                            <a href="#" class="btn btn-primary">View profile</a>
+                                                                                            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                                                                                        </div>
+                                                                                </div>
+                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="column serviceprovider">
+                     
+                                                                            <div class="card border-dark mb-3" style="max-width: 18rem;">
+                                                                                <div class="card profile-card-2">
+                                                                                        
+                                                                                        <div class="card-body pt-5" class="card-body text-dark">
+                                                                                            <img src="" alt="profile-image" class="profile"/>
+                                                                                            <h5 class="card-title"><a href="#">Name</a></h5>
+                                                                                            <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
+                                                                                            <a href="#" class="btn btn-primary">View profile</a>
+                                                                                            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                                                                                        </div>
+                                                                                </div>
+                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="column serviceprovider">
+                     
+                                                                            <div class="card border-dark mb-3" style="max-width: 18rem;">
+                                                                                <div class="card profile-card-2">
+                                                                                        
+                                                                                        <div class="card-body pt-5" class="card-body text-dark">
+                                                                                            <img src="" alt="profile-image" class="profile"/>
+                                                                                            <h5 class="card-title"><a href="#">Name</a></h5>
+                                                                                            <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
+                                                                                            <a href="#" class="btn btn-primary">View profile</a>
+                                                                                            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                                                                                        </div>
+                                                                                </div>
+                                                                                    </div>
+                                                                            </div>
+                                                                            
                              
                            
                        </div>
@@ -305,6 +396,16 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
+}
+
+function myFunction() {
+  var checkBox = document.getElementById("myAccelerator");
+  var text = document.getElementById("text");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
 }
                         
                         </script>
