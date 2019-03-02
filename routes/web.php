@@ -19,14 +19,14 @@ Route::get('/schemes', 'PagesController@schemes');
 Route::get('/templates', 'PagesController@templates');
 Route::get('/live-session', 'PagesController@livesession');
 Route::get('/tutorial', 'PagesController@tutorial');
-
+Route::get('/news', 'PagesController@news');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
 // mentee routes sanya
-Route::get('/admin/Startup-inital','StartupController@index')->name('startup.auth');
+Route::get('/admin/Startup-inital','StartupController@index');
 Route::get('/stakeholdersindex','StakeholderController@registration1');
 Route::get('/stakeholdersprofile','StakeholderController@stakeholdersprofile');
 Route::get('/reglvl1','StakeholderController@reglvl1');
@@ -81,7 +81,7 @@ Route::get('/list_mentors','StartupController@list_mentors');
 // Route::get('/admin/stakeholder-inital','StakeholderController@index');
 Route::post('/admin/reglvl1', 'StakeholderController@store');
 //abhishek
-Route::get('/dashboard','StartupController@dashboard');
+Route::get('/dashboard','StartupController@dashboard')->name('startup.auth');
 
 
 
@@ -113,3 +113,8 @@ Route::get('/dashboard','StartupController@dashboard');
 
 
 //divyam
+
+
+
+
+

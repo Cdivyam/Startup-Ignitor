@@ -196,14 +196,14 @@ Welcome Slider
 		<div class="row">
 			<div class="col-md-12">
 				<div class="block">
-					<h1 class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".3s" >Startup Igniters <br> Welcome You!</h1>
+					<h1 class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".3s" >Startup Igniter <br> Welcomes You!</h1>
 					<p class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".5s">We thrive to convert your dreams into reality through our services</p>
 					<ul class="list-inline wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".7s">
 						<li>
 							<a data-scroll href="#menu" class="btn btn-main" class="menu__link scroll">Explore Us</a>		
 						</li>
 						<li>
-							<a data-scroll href="#team" class="btn btn-transparent">Learn More</a>			
+							<a data-scroll href="/about-ecosystem" class="btn btn-main">Learn More</a>			
 						</li>
 					</ul>
 				</div>
@@ -234,7 +234,7 @@ Welcome Slider
                       <li>this is a user-friendly & interactive application which provides interaction between mentee & different stakeholders</li>
                       <li>connecting mentors to relevent organization. with an optimized filter alogorithm</li>
                   </ul>
-          <a href="#" class="btn btn-main mt-20">Learn More</a>
+          <a href="/how-to" class="btn btn-main mt-20">Learn More</a>
         </div>
       </div> 		<!-- End row -->
     </div>   	<!-- End container -->
@@ -246,96 +246,14 @@ Welcome Slider
         <div class="row">
             <div class="col-md-12 text-center">
                 <div class="title" style="padding : 0%; margin: 0px;">
-                    <p style="color: white; font-size: 3em;">through the community support </p>
+                    <p style="color: white; font-size: 3em;">Professional Support </p>
                 </div><br>
             </div>
             <!-- first count item -->
-            <div class="col-md-4  col-sm-6 col-xs-12 text-center ">
-                <div class="counters-item">
-                    <a class="menu__link scroll" href="#enthusiast">
-                        <img class="logo-default" src="{{ URL::to('bingoimages/Enthusiast.png') }}" alt="logo" />
-                        <div>
-                            <span class="counter" style="color: white; font-size: 1.5em; line-height: 60%;">BUSINESS ENTHUSIAST</span>
-                        </div>
-                        <h4 style="color: white;">EAGER TO LEARN ABOUT BUSSINESS AND STARTUPS</h4>
-                    </a>
-                </div>
-            </div>
-            <!-- end first count item -->
-        
-            <!-- second count item -->
-            <div class="col-md-4  col-sm-6 col-xs-12 text-center ">
-                <div class="counters-item">
-                <a class="menu__link scroll" href="#mentor">
-                    <img class="logo-default" src="{{ URL::to('bingoimages/Mentor.png') }}" alt="logo" />
-                    <div>
-                        <span class="counter" style="color: white; font-size: 1.5em; line-height: 60%;">MENTOR</span>
-                    </div>
-                    <h4 style="color: white;">DEDICATED TO GUIDE FUTURE BUSSINESSES</h4>
-                </a>
-                </div>
-            </div>
-            <!-- end second count item -->
-        
-            <!-- third count item -->
-            <div class="col-md-4 col-sm-6 col-xs-12 text-center ">
-                <div class="counters-item kill-border">
-                <a class="menu__link scroll" href="#incubator">
-                    <img class="logo-default" src="{{ URL::to('bingoimages/Incubator.png') }}" alt="logo" />
-                    <div>
-                        <span class="counter" style="color: white; font-size: 1.5em; line-height: 60%;">INCUBATOR<br></span>
-                    </div>
-                    <h4 style="color: white;">LOOKING TO COLLABORATE WITH STARTUPS</h4>
-                </a>
-                </div>
-            </div>
+          
             <!-- end third count item -->
 
-            <!-- fourth count item -->
-            <div class="col-md-4 col-sm-6 col-xs-12 text-center ">
-                <div class="counters-item">
-                <a class="menu__link scroll" href="#accelerator">
-                    <img class="logo-default" src="{{ URL::to('bingoimages/Accelerator.png') }}" alt="logo" />
-                    <div>
-                        <span class="counter" style="color: white; font-size: 1.5em; line-height: 60%;">ACCELERATOR<br></span>
-                    </div>
-                    <h4 style="color: white;">LOOKING TO SCALE THE STARTUPS</h4>
-                </a>
-                </div>
-            </div>
-            <!-- end fourth count item -->
-
-            <div class="col-md-4 col-sm-6 col-xs-12 text-center ">
-                <div class="counters-item">
-                <a class="menu__link scroll" href="#investor">
-                    <img class="logo-default" src="{{ URL::to('bingoimages/Investor.png') }}" alt="logo" />
-                    <div>
-                        <span class="counter" style="color: white; font-size: 1.5em; line-height: 60%;">INVESTOR</span>
-                    </div>
-                    <h4 style="color: white;">PASSIONATE ABOUT BUSINESSES AND READY TO INVEST</h4>
-                </a>
-                </div>
-            </div>
-            <!-- end fifth count item -->
-
-            <div class="col-md-4  col-sm-6 col-xs-12 text-center ">
-                <div class="counters-item kill-border" style="padding : 0px; margin: 0px;">
-                <a class="menu__link scroll" href="#service">
-                    <img class="logo-default" src="{{ URL::to('bingoimages/Service.png') }}" alt="logo" />
-                    <div>
-                        <span class="counter" style="color: white; font-size: 1.5em; line-height: 60%;">SERVICE PROVIDER</span>
-                    </div>
-                    <h4 style="color: white;">READY TO SERVE STARTUPS AND BUSINESSES</h4>
-                </a>
-                </div>
-            </div>
-            
-            <!-- end sixth count item-->
-        </div> 		<!-- end row -->
-        
-    </div>   	<!-- end container -->
-    
-</section> -->
+ 
   
 	@include('home_sections.enthusiast')
 	@include('home_sections.mentor')

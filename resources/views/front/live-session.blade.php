@@ -56,7 +56,7 @@ End Fixed Navigation
 
 			<!-- section title -->
 			<div class="title text-center ">
-				<h2> Latest <span class="color">Posts</span></h2>
+				<h2> Current <span class="color">Sessions</span></h2>
 				<div class="border"></div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus facere accusamus, reprehenderit libero inventore nam.</p>
 			</div>
