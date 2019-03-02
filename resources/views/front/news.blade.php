@@ -24,7 +24,21 @@
   <!--
   End Preloader
   ==================================== -->
+  @include('includes.header')
 
+  <section class="single-page-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>NEWS</h2>
+				<ol class="breadcrumb header-bradcrumb">
+				  <li><a href="index.html">Home</a></li>
+				  <li class="active">News</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>
 
   
   <section class="team" id="team" style="padding-top: 100px ;background: white"  >
@@ -286,24 +300,10 @@ commented -->
 
 </style>
 
-@include('includes.header')
 <!--
 End Fixed Navigation
 ==================================== -->
 
-<section class="single-page-header">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h2>LIVE SESSIONS</h2>
-				<ol class="breadcrumb header-bradcrumb">
-				  <li><a href="index.html">Home</a></li>
-				  <li class="active">Easy Pricing</li>
-				</ol>
-			</div>
-		</div>
-	</div>
-</section>
 
 
 
