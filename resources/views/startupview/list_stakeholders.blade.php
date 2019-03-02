@@ -105,41 +105,18 @@ h1 {
                     <button class="btn" onclick="filterSelection('investor')"> Investor</button>
                     <button class="btn" onclick="filterSelection('serviceprovider')"> Service Provider</button>
                   </div>
-                  <div class="section">
-                    <div class="container">
-                       
-                       
-                      <div class="column">
-                          Checkbox: <input type="checkbox" id="myAccelerator"  onclick="myFunction()">
-
-                          <div class="column accelerator"  id="text" style="display:none">
-                       
-                              <div class="card border-dark mb-3" style="max-width: 18rem;">
-                                  <div class="card profile-card-2">
-                                          
-                                          <div class="card-body pt-5" class="card-body text-dark">
-                                              <img src="" alt="profile-image" class="profile"/>
-                                              <h5 class="card-title"><a href="#">Name</a></h5>
-                                              <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
-                                              <a href="#" class="btn btn-default">View profile</a>
-                                              <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
-                                          </div>
-                                  </div>
-                                      </div>
-                              </div>
-                              
-                        
-
-                      </div>
+                  
+                  <div class="col-sm-12 mb-3">
+                      <input type="text" id="myFilter" class="form-control" onkeyup="myFunction1()" placeholder="Search for names..">
                     </div>
-                  </div>
         <div class="section">
                 <div class="container">
                    <div class="row" >
                          <div class="col-md-12">
-                       </div>
-                   </div>
-                   <div class="row">
+                           
+                     
+                   
+                      <div class="row"  id="myItems">
                      <div class="card-deck">
                          <div class="column accelerator">
                      
@@ -148,7 +125,7 @@ h1 {
                                    
                                    <div class="card-body pt-5" class="card-body text-dark">
                                        <img src="" alt="profile-image" class="profile"/>
-                                       <h5 class="card-title"><a href="#">Name</a></h5>
+                                       <h5 class="card-title"><a href="#">A</a></h5>
                                        <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
                                        <a href="#" class="btn btn-default">View profile</a>
                                        <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
@@ -157,13 +134,14 @@ h1 {
                                </div>
                        </div>
                        <div class="column accelerator">
+                         
                      
                             <div class="card border-dark mb-3" style="max-width: 18rem;">
                                 <div class="card profile-card-2">
                                         
                                         <div class="card-body pt-5" class="card-body text-dark">
                                             <img src="" alt="profile-image" class="profile"/>
-                                            <h5 class="card-title"><a href="#">Name</a></h5>
+                                            <h5 class="card-title"><a href="#">b</a></h5>
                                             <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
                                             <a href="#" class="btn btn-default">View profile</a>
                                             <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
@@ -178,7 +156,7 @@ h1 {
                                                 
                                                 <div class="card-body pt-5" class="card-body text-dark">
                                                     <img src="" alt="profile-image" class="profile"/>
-                                                    <h5 class="card-title"><a href="#">Name</a></h5>
+                                                    <h5 class="card-title"><a href="#">c</a></h5>
                                                     <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
                                                     <a href="#" class="btn btn-default">View profile</a>
                                                     <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
@@ -339,14 +317,16 @@ h1 {
                                                                                 </div>
                                                                                     </div>
                                                                             </div>
+                                                                          </div>
+                                                                        </div>
                                                                             
                              
                            
                        </div>
                        
-                       
+                      </div>
                    </div>
-                 </div>
+                 
                 </div>
 
                   <script>
@@ -408,6 +388,21 @@ function myFunction() {
   }
 }
                         
+function myFunction1() {
+    var input, filter, cards, cardContainer, h5, title, i;
+    input = document.getElementById("myFilter");
+    filter = input.value.toUpperCase();
+    cardContainer = document.getElementById("myItems");
+    cards = cardContainer.getElementsByClassName("card");
+    for (i = 0; i < cards.length; i++) {
+        title = cards[i].querySelector(".card-body h5.card-title");
+        if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+            cards[i].style.display = "";
+        } else {
+            cards[i].style.display = "none";
+        }
+    }
+}
                         </script>
 
 
