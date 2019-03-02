@@ -1,4 +1,4 @@
-@extends('mentorview.app')
+@extends('startupview.app')
 
 @section('content')
 
@@ -7,14 +7,13 @@
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="index.html">Dashboard</a>
+          <a href="/menteeapplyform">REGISTRATION</a>
         </li>
-        <li class="breadcrumb-item active"><a href="#">Your Uploads</li>
+        <li class="breadcrumb-item active"><a href="/mouform">MEMORANDUM OF UNDERSTANDING</a></li>
       </ol>
       <div class="row">
         <div class="col-12">
-          <h1 class="text-center">Mentor</h1>
-          
+          <h1 class="text-center">Mentee</h1>
         </div>
       </div>
     </div>

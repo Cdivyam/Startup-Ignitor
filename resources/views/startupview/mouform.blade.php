@@ -7,7 +7,7 @@
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="index.html">HOME</a>
+          <a href="/dashboard">HOME</a>
         </li>
         <li class="breadcrumb-item active"><a href="#">MEMORANDUM OF UNDERSTANDING</a></li>
       </ol>

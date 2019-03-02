@@ -21,5 +21,11 @@ class StakeholderController extends Controller
     public function index(){
         return view('stakeholders.index');
     }
+<<<<<<< Updated upstream
     
+=======
+    public function stakeholderform(){
+        return view('stakeholders.stakeholderform');
+    }
+>>>>>>> Stashed changes
 }
