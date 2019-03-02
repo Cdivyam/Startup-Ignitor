@@ -20,7 +20,7 @@
                       All rights reserved.</h3></li>
                   <li><a href="#">Terms of Use</a></li>
                   <li><a href="#">Disclaimer</a></li>
-                  <li><a href="#">FAQ’s</a></li>
+                  <li><a href="/faqs">FAQ’s</a></li>
                   <li><a href="#">Tender</a></li>
               </ul>
               </div>

@@ -68,7 +68,7 @@ End Fixed Navigation
 				
 					<div class="alert alert-warning alert-dismissible" role="alert">
 						<button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-						This section contains a wealth of information, related to <strong>Startup Igniters</strong> and its services. If you cannot find an answer to your question, 
+						This section contains a wealth of information, related to <strong>Startup Igniter</strong> and its services. If you cannot find an answer to your question, 
 						make sure to contact us. 
 					</div>
 				

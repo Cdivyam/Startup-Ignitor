@@ -13,8 +13,7 @@
           <a href="#">Dashboard</a>
         </li>
         
-        <li class="breadcrumb-item">
-          <a href="#">Update Profile</a>
+        
       </ol>
       <!-- Icon Cards-->
       <div class="row">

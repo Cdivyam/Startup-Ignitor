@@ -196,7 +196,7 @@ Welcome Slider
 		<div class="row">
 			<div class="col-md-12">
 				<div class="block">
-					<h1 class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".3s" >Startup Igniters <br> Welcome You!</h1>
+					<h1 class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".3s" >Startup Igniter <br> Welcomes You!</h1>
 					<p class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".5s">We thrive to convert your dreams into reality through our services</p>
 					<ul class="list-inline wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".7s">
 						<li>
@@ -241,6 +241,17 @@ Welcome Slider
   </section>   <!-- End section -->
   
 @include('home_sections.menu')
+<!-- <section class="counter-wrapper section-sm" style="background-color: #76cf4a; padding-top : 100px; padding-bottom: 100px;" id="choose">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="title" style="padding : 0%; margin: 0px;">
+                    <p style="color: white; font-size: 3em;">Professional Support </p>
+                </div><br>
+            </div>
+            <!-- first count item -->
+          
+            <!-- end third count item -->
 
  
   
