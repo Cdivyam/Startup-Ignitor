@@ -16,6 +16,7 @@ class CreateMenteesTable extends Migration
         Schema::create('mentees', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('u_id');
+            $table->string('name');
             $table->string('country');
             $table->string('city');
             $table->string('state');

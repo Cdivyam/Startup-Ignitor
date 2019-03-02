@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 class StartupController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index()
     {
         return view('startupview.index');
@@ -16,6 +20,7 @@ class StartupController extends Controller
     }
     public function store(Request $request){
         $this->validate($request, [
+            'name' => 'required',
             'country' => 'required',
             'city' => 'required',
             'state' => 'required',
@@ -44,6 +49,7 @@ class StartupController extends Controller
         }
 
         $mentee = new Mentee;
+        $mentee->name = $request->input('name');
         $mentee->u_id = auth()->user()->id;
         $mentee->country = $request->input('country');
         $mentee->city = $request->input('city');;
