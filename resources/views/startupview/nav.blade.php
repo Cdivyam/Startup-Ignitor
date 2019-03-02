@@ -2,6 +2,8 @@
   width: 10px;
 }
 
+...
+
 /* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1; 
@@ -19,12 +21,24 @@
 <!-- Navigation-->
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    
     <a class="navbar-brand" href="{{ url('/admin') }}">Start Bootstrap</a>
+    <div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <a class="navbar-brand" href="{{ url('/admin') }}">Startup Ignitor</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
+    <div class="collapse navbar-collapse" id="navbarResponsive" >
         <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+            <!-- style="overflow-y: scroll;" -->
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
                 <a class="nav-link" href="{{ url('/dashboard') }}">
                     <i class="fa fa-fw fa-dashboard"></i>
@@ -36,8 +50,10 @@
                    
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
                 <a class="nav-link" href="{{ url('/menteeapplyform') }}">
-                        <i class="fa fa-fw fa-dashboard"></i>
+                        <i class="fa fa-fw fa-sign-in"></i>
                     <span class="nav-link-text">Registration</span><br>
+
+                        
                 </a>
             </li>
 
@@ -55,10 +71,7 @@
                     <i class="fa fa-pencil-square-o"></i>
 
                     <span class="nav-link-text">&nbsp;Agreement</span>
-
-
-                    
-                </a>
+                    </a>
             </li> 
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
                 <a class="nav-link" href="{{ url('/list_stakeholders') }}">
@@ -202,7 +215,7 @@
             <li class="nav-item">
                 <form class="form-inline my-2 my-lg-0 mr-lg-2">
                     <div class="input-group">
-                        <input class="form-control" type="text" placeholder="Search for...">
+                        <input class="form-control" type="text" placeholder="Search for..."style="margin-top: 0px;">
                         <span class="input-group-append">
                 <button class="btn btn-primary" type="button">
                   <i class="fa fa-search"></i>

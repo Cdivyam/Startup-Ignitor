@@ -1,76 +1,413 @@
+@extends('startupview.app')
 
-@extends('admin.layouts.dashboard')
+@section('content')
 
-@section('page_heading','Tables')
+<style>
 
-@section('section')
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+.btn.active {
+  background-color: #666;
+   color: white;
+}
+
+</style>
+
+<div class="content-wrapper">
+        <div class="container-fluid">
+                <!-- Breadcrumbs-->
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="/">Dashboard</a>
+                  </li>
+                  <li class="breadcrumb-item active">List Of Stake Holders</li>
+                </ol>
+                <div class="row">
+                  <div class="col-12">
+                    <h1>Stakeholders</h1>
+                    <p>Here is the list of Stakeholders available in our Organisation</p>
+                  </div>
+                </div>
+              </div>
+              <div id="myBtnContainer">
+                    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                    <button class="btn" onclick="filterSelection('accelerator')"> Accelerator</button>
+                    <button class="btn" onclick="filterSelection('incubator')"> Incubator</button>
+                    <button class="btn" onclick="filterSelection('investor')"> Investor</button>
+                    <button class="btn" onclick="filterSelection('serviceprovider')"> Service Provider</button>
+                  </div>
+                  
+                  <div class="col-sm-12 mb-3">
+                      <input type="text" id="myFilter" class="form-control" onkeyup="myFunction1()" placeholder="Search for names..">
+                    </div>
+        <div class="section">
+                <div class="container">
+                   <div class="row" >
+                         <div class="col-md-12">
+                           
+                     
+                   
+                      <div class="row"  id="myItems">
+                     <div class="card-deck">
+                         <div class="column accelerator">
+                     
+                       <div class="card border-dark mb-3" style="max-width: 18rem;">
+                           <div class="card profile-card-2">
+                                   
+                                   <div class="card-body pt-5" class="card-body text-dark">
+                                       <img src="" alt="profile-image" class="profile"/>
+                                       <h5 class="card-title"><a href="#">A</a></h5>
+                                       <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
+                                       <a href="#" class="btn btn-default">View profile</a>
+                                       <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                                   </div>
+                           </div>
+                               </div>
+                       </div>
+                       <div class="column accelerator">
+                         
+                     
+                            <div class="card border-dark mb-3" style="max-width: 18rem;">
+                                <div class="card profile-card-2">
+                                        
+                                        <div class="card-body pt-5" class="card-body text-dark">
+                                            <img src="" alt="profile-image" class="profile"/>
+                                            <h5 class="card-title"><a href="#">b</a></h5>
+                                            <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
+                                            <a href="#" class="btn btn-default">View profile</a>
+                                            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                                        </div>
+                                </div>
+                                    </div>
+                            </div>
+                            <div class="column accelerator">
+                     
+                                    <div class="card border-dark mb-3" style="max-width: 18rem;">
+                                        <div class="card profile-card-2">
+                                                
+                                                <div class="card-body pt-5" class="card-body text-dark">
+                                                    <img src="" alt="profile-image" class="profile"/>
+                                                    <h5 class="card-title"><a href="#">c</a></h5>
+                                                    <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
+                                                    <a href="#" class="btn btn-default">View profile</a>
+                                                    <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                                                </div>
+                                        </div>
+                                            </div>
+                                    </div>
+                                    <div class="column incubator">
+                     
+                                            <div class="card border-dark mb-3" style="max-width: 18rem;">
+                                                <div class="card profile-card-2">
+                                                        
+                                                        <div class="card-body pt-5" class="card-body text-dark">
+                                                            <img src="" alt="profile-image" class="profile"/>
+                                                            <h5 class="card-title"><a href="#">Name</a></h5>
+                                                            <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
+                                                            <a href="#" class="btn btn-primary">View profile</a>
+                                                            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                                                        </div>
+                                                </div>
+                                                    </div>
+                                            </div>
+                     
+                     
+                                    <div class="column incubator">
+                     
+                                            <div class="card border-dark mb-3" style="max-width: 18rem;">
+                                                <div class="card profile-card-2">
+                                                        
+                                                        <div class="card-body pt-5" class="card-body text-dark">
+                                                            <img src="" alt="profile-image" class="profile"/>
+                                                            <h5 class="card-title"><a href="#">Name</a></h5>
+                                                            <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
+                                                            <a href="#" class="btn btn-primary">View profile</a>
+                                                            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                                                        </div>
+                                                </div>
+                                                    </div>
+                                            </div>
+                                            <div class="column incubator">
+                     
+                                                    <div class="card border-dark mb-3" style="max-width: 18rem;">
+                                                        <div class="card profile-card-2">
+                                                                
+                                                                <div class="card-body pt-5" class="card-body text-dark">
+                                                                    <img src="" alt="profile-image" class="profile"/>
+                                                                    <h5 class="card-title"><a href="#">Name</a></h5>
+                                                                    <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
+                                                                    <a href="#" class="btn btn-primary">View profile</a>
+                                                                    <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                                                                </div>
+                                                        </div>
+                                                            </div>
+                                                    </div>
+                                                    <div class="column investor">
+                     
+                                                            <div class="card border-dark mb-3" style="max-width: 18rem;">
+                                                                <div class="card profile-card-2">
+                                                                        
+                                                                        <div class="card-body pt-5" class="card-body text-dark">
+                                                                            <img src="" alt="profile-image" class="profile"/>
+                                                                            <h5 class="card-title"><a href="#">Name</a></h5>
+                                                                            <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
+                                                                            <a href="#" class="btn btn-primary">View profile</a>
+                                                                            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                                                                        </div>
+                                                                </div>
+                                                                    </div>
+                                                            </div>
+                                                            <div class="column investor">
+                     
+                                                                    <div class="card border-dark mb-3" style="max-width: 18rem;">
+                                                                        <div class="card profile-card-2">
+                                                                                
+                                                                                <div class="card-body pt-5" class="card-body text-dark">
+                                                                                    <img src="" alt="profile-image" class="profile"/>
+                                                                                    <h5 class="card-title"><a href="#">Name</a></h5>
+                                                                                    <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
+                                                                                    <a href="#" class="btn btn-primary">View profile</a>
+                                                                                    <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                                                                                </div>
+                                                                        </div>
+                                                                            </div>
+                                                                    </div>
+                                                                    <div class="column investor">
+                     
+                                                                            <div class="card border-dark mb-3" style="max-width: 18rem;">
+                                                                                <div class="card profile-card-2">
+                                                                                        
+                                                                                        <div class="card-body pt-5" class="card-body text-dark">
+                                                                                            <img src="" alt="profile-image" class="profile"/>
+                                                                                            <h5 class="card-title"><a href="#">Name</a></h5>
+                                                                                            <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
+                                                                                            <a href="#" class="btn btn-primary">View profile</a>
+                                                                                            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                                                                                        </div>
+                                                                                </div>
+                                                                                    </div>
+                                                                            </div>
+
+                                                                            <div class="column serviceprovider">
+                     
+                                                                            <div class="card border-dark mb-3" style="max-width: 18rem;">
+                                                                                <div class="card profile-card-2">
+                                                                                        
+                                                                                        <div class="card-body pt-5" class="card-body text-dark">
+                                                                                            <img src="" alt="profile-image" class="profile"/>
+                                                                                            <h5 class="card-title"><a href="#">Name</a></h5>
+                                                                                            <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
+                                                                                            <a href="#" class="btn btn-primary">View profile</a>
+                                                                                            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                                                                                        </div>
+                                                                                </div>
+                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="column serviceprovider">
+                     
+                                                                            <div class="card border-dark mb-3" style="max-width: 18rem;">
+                                                                                <div class="card profile-card-2">
+                                                                                        
+                                                                                        <div class="card-body pt-5" class="card-body text-dark">
+                                                                                            <img src="" alt="profile-image" class="profile"/>
+                                                                                            <h5 class="card-title"><a href="#">Name</a></h5>
+                                                                                            <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
+                                                                                            <a href="#" class="btn btn-primary">View profile</a>
+                                                                                            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                                                                                        </div>
+                                                                                </div>
+                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="column serviceprovider">
+                     
+                                                                            <div class="card border-dark mb-3" style="max-width: 18rem;">
+                                                                                <div class="card profile-card-2">
+                                                                                        
+                                                                                        <div class="card-body pt-5" class="card-body text-dark">
+                                                                                            <img src="" alt="profile-image" class="profile"/>
+                                                                                            <h5 class="card-title"><a href="#">Name</a></h5>
+                                                                                            <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
+                                                                                            <a href="#" class="btn btn-primary">View profile</a>
+                                                                                            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                                                                                        </div>
+                                                                                </div>
+                                                                                    </div>
+                                                                            </div>
+                                                                            <div class="column serviceprovider">
+                     
+                                                                            <div class="card border-dark mb-3" style="max-width: 18rem;">
+                                                                                <div class="card profile-card-2">
+                                                                                        
+                                                                                        <div class="card-body pt-5" class="card-body text-dark">
+                                                                                            <img src="" alt="profile-image" class="profile"/>
+                                                                                            <h5 class="card-title"><a href="#">Name</a></h5>
+                                                                                            <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
+                                                                                            <a href="#" class="btn btn-primary">View profile</a>
+                                                                                            <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
+                                                                                        </div>
+                                                                                </div>
+                                                                                    </div>
+                                                                            </div>
+                                                                          </div>
+                                                                        </div>
+                                                                            
+                             
+                           
+                       </div>
+                       
+                      </div>
+                   </div>
+                 
+                </div>
+
+                  <script>
+                    filterSelection("all") // Execute the function and show all columns
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1); 
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+function myFunction() {
+  var checkBox = document.getElementById("myAccelerator");
+  var text = document.getElementById("text");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+                        
+function myFunction1() {
+    var input, filter, cards, cardContainer, h5, title, i;
+    input = document.getElementById("myFilter");
+    filter = input.value.toUpperCase();
+    cardContainer = document.getElementById("myItems");
+    cards = cardContainer.getElementsByClassName("card");
+    for (i = 0; i < cards.length; i++) {
+        title = cards[i].querySelector(".card-body h5.card-title");
+        if (title.innerText.toUpperCase().indexOf(filter) > -1) {
+            cards[i].style.display = "";
+        } else {
+            cards[i].style.display = "none";
+        }
+    }
+}
+                        </script>
 
 
-        <div class="row">
-            <div class="col-sm-12">
-                @component('admin.widgets.panel')
-                    @slot('panelTitle', 'Coloured Table')
-                    @slot('panelBody')
-                        <table class="table table-bordered">
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Organisation</th>
-                                    <th>Location</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="success">
-                                    <td>John</td>
-                                    <td>john@gmail.com</td>
-                                    <td>London, UK</td>
-                                </tr>
-                                <tr>
-                                    <td>Wayne</td>
-                                    <td>wayne@gmail.com</td>
-                                    <td>Manchester, UK</td>
-                                </tr>
-                                <tr class="info">
-                                    <td>Andy</td>
-                                    <td>andy@gmail.com</td>
-                                    <td>Merseyside, UK</td>
-                                </tr>
-                                <tr>
-                                    <td>Danny</td>
-                                    <td>danny@gmail.com</td>
-                                    <td>Middlesborough, UK</td>
-                                </tr>
-                                <tr class="warning">
-                                    <td>Frank</td>
-                                    <td>frank@gmail.com</td>
-                                    <td>Southampton, UK</td>
-                                </tr>
-                                <tr>
-                                    <td>Scott</td>
-                                    <td>scott@gmail.com</td>
-                                    <td>Newcastle, UK</td>
-                                </tr>
-                                <tr class="danger">
-                                    <td>Rickie</td>
-                                    <td>rickie@gmail.com</td>
-                                    <td>Burnley, UK</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    @endslot
-                @endcomponent
-            </div>
-            <!-- /.col-sm-6 -->
-        </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.col-sm-12 -->
-    <footer class="sticky-footer">
-        <div class="container">
-          <div class="text-center">
-            <small>Copyright © Your Website 2018</small>
-          </div>
-        </div>
-      </footer>
 
+
+
+    
 @endsection

@@ -191,7 +191,6 @@ End Fixed Navigation
 	 <!--
 Welcome Slider
 ==================================== -->
-
 <section class="hero-area">
 	<div class="container">
 		<div class="row">
@@ -201,7 +200,7 @@ Welcome Slider
 					<p class="wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".5s">We thrive to convert your dreams into reality through our services</p>
 					<ul class="list-inline wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".7s">
 						<li>
-							<a data-scroll href="#services" class="btn btn-main">Explore Us</a>		
+							<a data-scroll href="#menu" class="btn btn-main" class="menu__link scroll">Explore Us</a>		
 						</li>
 						<li>
 							<a data-scroll href="#team" class="btn btn-transparent">Learn More</a>			
@@ -240,8 +239,9 @@ Welcome Slider
       </div> 		<!-- End row -->
     </div>   	<!-- End container -->
   </section>   <!-- End section -->
-
-<section class="counter-wrapper section-sm" style="background-color: #76cf4a; padding-top : 100px; padding-bottom: 100px;" id="choose">
+  
+@include('home_sections.menu')
+<!-- <section class="counter-wrapper section-sm" style="background-color: #76cf4a; padding-top : 100px; padding-bottom: 100px;" id="choose">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -269,7 +269,7 @@ Welcome Slider
                 <a class="menu__link scroll" href="#mentor">
                     <img class="logo-default" src="{{ URL::to('bingoimages/Mentor.png') }}" alt="logo" />
                     <div>
-                        <span class="counter" style="color: white; font-size: 1.5em; line-height: 60%;">INTELLECTUAL</span>
+                        <span class="counter" style="color: white; font-size: 1.5em; line-height: 60%;">MENTOR</span>
                     </div>
                     <h4 style="color: white;">DEDICATED TO GUIDE FUTURE BUSSINESSES</h4>
                 </a>
@@ -335,8 +335,8 @@ Welcome Slider
         
     </div>   	<!-- end container -->
     
-</section>
-
+</section> -->
+  
 	@include('home_sections.enthusiast')
 	@include('home_sections.mentor')
 	@include('home_sections.incubator')
