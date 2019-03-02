@@ -31,6 +31,14 @@
                     <span class="nav-link-text">My Stats</span>
                 </a>
             </li>
+
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+                    <a class="nav-link" href="{{ url('/data_repository/create') }}">
+                        <i class="fa fa-fw fa-tags"></i>
+                        <span class="nav-link-text">Blogs</span>
+                    </a>
+            </li>
+
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
                 <a class="nav-link" href="{{ url('/admin/tables') }}">
                     <i class="fa fa-fw fa-group"></i>
