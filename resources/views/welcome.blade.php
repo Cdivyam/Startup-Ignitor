@@ -203,7 +203,7 @@ Welcome Slider
 							<a data-scroll href="#menu" class="btn btn-main" class="menu__link scroll">Explore Us</a>		
 						</li>
 						<li>
-							<a data-scroll href="#team" class="btn btn-transparent">Learn More</a>			
+							<a data-scroll href="/about-ecosystem" class="btn btn-transparent">Learn More</a>			
 						</li>
 					</ul>
 				</div>
@@ -234,7 +234,7 @@ Welcome Slider
                       <li>this is a user-friendly & interactive application which provides interaction between mentee & different stakeholders</li>
                       <li>connecting mentors to relevent organization. with an optimized filter alogorithm</li>
                   </ul>
-          <a href="#" class="btn btn-main mt-20">Learn More</a>
+          <a href="/how-to" class="btn btn-main mt-20">Learn More</a>
         </div>
       </div> 		<!-- End row -->
     </div>   	<!-- End container -->
