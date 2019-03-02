@@ -69,3 +69,36 @@ Route::get('/list_mentors','StartupController@list_mentors');
 //edited by Divyam
 Route::get('/admin/stakeholder-inital','StakeholderController@index');
 Route::post('/admin/reglvl1', 'StakeholderController@store');
+//abhishek
+
+
+
+
+
+
+//sanya
+
+
+
+
+
+
+//tanya
+
+
+
+
+
+//prakash
+
+
+
+
+
+//shubham
+
+
+
+
+
+//divyam
