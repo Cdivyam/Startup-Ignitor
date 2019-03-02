@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -47,4 +47,16 @@ class PagesController extends Controller
     {
         return view('front.tutorial');
     }
+    public function news(){ 
+    	$client = new Client();
+        $response = $client->request('GET', 'https://newsapi.org/v2/top-headlines?sources=business-insider&apiKey=c7f7fc0490074243888cc544008bff3e');
+        // return $response;
+
+        $content = $response->getBody();
+        // return $content['article'];
+        $news =  json_decode($content, true);
+       	$articles = $news['articles'];
+        return view('front.news')->with('articles', $articles);
+    }
+
 }

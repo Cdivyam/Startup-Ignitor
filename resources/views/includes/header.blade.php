@@ -42,8 +42,8 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Connect <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                       <li><a href="index.html">Forum</a></li>
-                       <li><a href="/blogs">Blog</a></li>
+                       <li><a href="http://localhost/StartupIgnitor_forum/public/" target="_blank">Forum</a></li>
+                       <li><a href="http://localhost:8080/blogs" target="_blank">Blog</a></li>
                        <li><a href="/event-session">Events & Sessions</a></li>
                        <li><a href="/faqs">FAQs</a></li>
                     </ul>

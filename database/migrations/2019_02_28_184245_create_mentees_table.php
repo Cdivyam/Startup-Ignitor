@@ -16,10 +16,12 @@ class CreateMenteesTable extends Migration
         Schema::create('mentees', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('u_id');
+            $table->string('name');
             $table->string('country');
             $table->string('city');
             $table->string('state');
             $table->bigInteger('phone');
+            $table->text('address');
             $table->text('description');
             $table->string('industry');
             $table->string('sector');

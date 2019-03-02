@@ -165,7 +165,7 @@ End Fixed Navigation
               
               <div class="content">
                 <h3><a href="single-post.html">Financial Help & Auditing</a></h3>
-                <p>For the beginners and new to world of entreprenuership,not only funding is important but also the paperwork.Thats where Startup Igniters comes to help with its Financial and Auditing paperwork aid by high professionals in those fields. </p>
+                <p>For the beginners and new to world of entreprenuership,not only funding is important but also the paperwork.Thats where Startup Igniter comes to help with its Financial and Auditing paperwork aid by high professionals in those fields. </p>
                 <a class="btn btn-main" href="single-post.html">Read more</a>
               </div>
             </div>						
