@@ -117,7 +117,7 @@ button:hover {
     <form id="regForm" action="/action_page.php">
   <h2>Mentee Registration Form</h2>
   <!-- One "tab" for each step in the form: -->
-  <div class="tab">Name:
+  <div class="tab">Startup Name:
     <p><input placeholder="Enter your name..." onfocus="this.value=''" oninput="this.className = ''" name="name" ></p>
     <label for="Country">Country</label>
     <select id="country" name="Country">
@@ -190,24 +190,41 @@ button:hover {
       <option value="Tamil-nadu">Tamil Nadu</option>
     </select>
   </div>
+
   <div class="tab">Contact Info:
     <p><input type="tel" placeholder="Phone..." onfocus="this.value=''" oninput="this.className = ''" name="phone"></p>
-    <p><input placeholder="Enter Alternate Number..." onfocus="this.value=''" oninput="this.className = ''" name="phone"></p>
+    <label for="subject">Address</label>
+    <textarea id="subject" onfocus="this.value=''" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+    <label for="subject">Description</label>
+    <textarea id="subject" onfocus="this.value=''" name="subject" placeholder="Write something.." style="height:100px"></textarea>    
   </div>
   
-  <div class="tab">Login Info:
-    <p><input type="email" value="" onfocus="this.value=''" placeholder="name@email.com" required /></p>
-
-    <p><input placeholder="Username..." onfocus="this.value=''" oninput="this.className = ''" name="uname" required></p>
-    Password:<input type="password" onfocus="this.value=''" value="" id="myInput"><br>
-    Confirm Password:<input type="password" onfocus="this.value=''" value="" id="myInput"><br>
-    <label><input type="checkbox" onclick="myFunction()"style="width: 70px;"> Show Password</label>
-  </div>
   <div class="tab">
-    <label for="subject">Description</label>
-    <textarea id="subject" onfocus="this.value=''" name="subject" placeholder="Write something.." style="height:100px"></textarea>
     Sector<p><input placeholder="Enter your Sector..." onfocus="this.value=''" oninput="this.className = ''" name="Sector" required></p>
     Industry<p><input placeholder="Enter your industry..." onfocus="this.value=''" oninput="this.className = ''" name="Industry" required  ></p>
+    Preferred Stage:<div class="radio">
+      <label><input type="radio" name="optradio" style=" width: 50px;">Ideation</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="optradio"style=" width: 50px;">Validation</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="optradio"style=" width: 50px;">Early Traction</label>
+    </div>
+     <div class="radio">
+      <label><input type="radio" name="optradio"style=" width: 50px;">Scaling</label>
+    </div>
+  </div>
+  <div class="tab">
+  <!--Mentorship Required:<div class="checkbox">
+    <label><input type="checkbox" value="" style="width: 25px;">Chat</label>
+    </div>
+    <div class="checkbox">
+    <label><input type="checkbox" value="" style="width: 25px;">One to One video confrencing</label>
+    </div>
+    <div class="checkbox">
+    <label><input type="checkbox" value="" style="width: 25px;">Meeting</label>
+    </div>-->
     Upload Your Image<p><input type="file" name="pic" accept="image/*"></p>
   </div>
   <div style="overflow:auto;">
