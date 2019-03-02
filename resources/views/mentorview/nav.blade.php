@@ -18,42 +18,52 @@
                     <span class="nav-link-text">My Applications</span>
                 </a>
             </li>
-            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-                <a class="nav-link" href="{{ url('/admin/charts') }}">
-                    <i class="fa fa-fw fa-area-chart"></i>
-                    <span class="nav-link-text">Blacklists</span>
-                </a>
-            </li>
+            
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
                 <a class="nav-link" href="{{ url('/admin/tables') }}">
-                    <i class="fa fa-fw fa-table"></i>
+                    <i class="fa fa-fw fa-exchange"></i>
                     <span class="nav-link-text">Ongoing Connections</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
                 <a class="nav-link" href="{{ url('/admin/tables') }}">
-                    <i class="fa fa-fw fa-table"></i>
+                    <i class="fa fa-fw fa-bar-chart-o"></i>
                     <span class="nav-link-text">My Stats</span>
                 </a>
             </li>
+
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+                    <a class="nav-link" href="{{ url('/data_repository/create') }}">
+                        <i class="fa fa-fw fa-tags"></i>
+                        <span class="nav-link-text">Blogs</span>
+                    </a>
+            </li>
+
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
                 <a class="nav-link" href="{{ url('/admin/tables') }}">
-                    <i class="fa fa-fw fa-table"></i>
+                    <i class="fa fa-fw fa-group"></i>
                     <span class="nav-link-text">Forums</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
                 <a class="nav-link" href="{{ url('/data_repository/create') }}">
-                    <i class="fa fa-fw fa-table"></i>
-                    <span class="nav-link-text">create repository</span>
+                    <i class="fa fa-fw fa-archive"></i>
+                    <span class="nav-link-text">Create repository</span>
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
                 <a class="nav-link" href="{{ url('/data_repository') }}">
-                    <i class="fa fa-fw fa-table"></i>
-                    <span class="nav-link-text">your uploads</span>
+                    <i class="fa fa-fw fa-upload"></i>
+                    <span class="nav-link-text">Your Uploads</span>
                 </a>
             </li>
+
+            <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+                    <a class="nav-link" href="{{ url('/admin/charts') }}">
+                        <i class="fa fa-fw fa-area-chart"></i>
+                        <span class="nav-link-text">Blacklists</span>
+                    </a>
+                </li>
             
         </ul>
         <ul class="navbar-nav sidenav-toggler">

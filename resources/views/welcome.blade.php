@@ -203,7 +203,7 @@ Welcome Slider
 							<a data-scroll href="#menu" class="btn btn-main" class="menu__link scroll">Explore Us</a>		
 						</li>
 						<li>
-							<a data-scroll href="/about-ecosystem" class="btn btn-transparent">Learn More</a>			
+							<a data-scroll href="/about-ecosystem" class="btn btn-main">Learn More</a>			
 						</li>
 					</ul>
 				</div>
