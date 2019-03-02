@@ -20,6 +20,7 @@ class CreateMenteesTable extends Migration
             $table->string('city');
             $table->string('state');
             $table->bigInteger('phone');
+            $table->text('address');
             $table->text('description');
             $table->string('industry');
             $table->string('sector');

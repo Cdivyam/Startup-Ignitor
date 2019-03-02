@@ -11,7 +11,51 @@ class StartupController extends Controller
         return view('startupview.index');
     }
     public function menteeapplyform(){
+
         return view('startupview.menteeapplyform');
+    }
+    public function store(Request $request){
+        $this->validate($request, [
+            'country' => 'required',
+            'city' => 'required',
+            'state' => 'required',
+            'phone' => 'required',
+            'phone' => 'required',
+            'address' => 'required',
+            'description' => 'required',
+            'industry' => 'required',
+            'sector' => 'required',
+            'image' => 'image|nullable|max:1999'
+        ]);
+        //Handle File Upload
+        if($request->hasFile('image')){
+            //Get File name with ext
+            $filenameWithExt = $request->file('image')->getClientOriginalName();
+            //Get just filename
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            //Get just ext
+            $extension = $request->file('image')->getClientOriginalExtension();
+            //FileName to store
+            $fileNameToStore = $filename.'_'.time().'.'.$extension;
+            //Upload Image
+            $path = $request->File('image')->storeAs('public/image', $fileNameToStore);
+        } else {
+            $fileNameToStore = 'noImage.jpg';
+        }
+
+        $mentee = new Mentee;
+        $mentee->u_id = auth()->user()->id;
+        $mentee->country = $request->input('country');
+        $mentee->city = $request->input('city');;
+        $mentee->state = $request->input('state');
+        $mentee->phone = $request->input('phone');
+        $mentee->address = $request->input('address');
+        $mentee->description = $request->input('description');
+        $mentee->industry = $request->input('industry');
+        $mentee->sector = $request->input('sector');
+        $mente->image = $fileNameToStore;
+        $post->save();
+        return redirect('/posts')->with('success', 'Post Created');
     }
     public function mouform()
     {
