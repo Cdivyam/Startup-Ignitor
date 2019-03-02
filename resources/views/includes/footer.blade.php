@@ -4,7 +4,7 @@
       <div class="container">
             <div class="row">
                <div class="col-sm-5 col-md-5 col-lg-5">
-                  <img class="logo-default" src="{{ URL::to('images/') }}" alt="logo"/>
+                  <img class="logo-default" src="{{ URL::to('bingoimages/logo_green.png') }}" alt="logo"/ width="170px" height="190px">
               </div>
               <!-- End of .col-sm-3 -->
               
