@@ -104,7 +104,7 @@ button:hover {
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="index.html">HOME</a>
+          <a href="/dashboard">HOME</a>
         </li>
         <li class="breadcrumb-item active"><a href="#">REGISTRATION</a></li>
       </ol>
@@ -201,7 +201,7 @@ button:hover {
     <p><input placeholder="Username..." onfocus="this.value=''" oninput="this.className = ''" name="uname" required></p>
     Password:<input type="password" onfocus="this.value=''" value="" id="myInput"><br>
     Confirm Password:<input type="password" onfocus="this.value=''" value="" id="myInput"><br>
-    <label><input type="checkbox" onclick="myFunction()"> Show Password</label>
+    <label><input type="checkbox" onclick="myFunction()"style="width: 70px;"> Show Password</label>
   </div>
   <div class="tab">
     <label for="subject">Description</label>

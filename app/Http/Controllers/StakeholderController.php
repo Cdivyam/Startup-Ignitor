@@ -63,5 +63,9 @@ class StakeholderController extends Controller
     public function index(){
         return view('stakeholders.index');
     }
-    
+
+    public function stakeholderform(){
+        return view('stakeholders.stakeholderform');
+    }
+
 }
