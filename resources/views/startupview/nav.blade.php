@@ -22,7 +22,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     
-    <a class="navbar-brand" href="{{ url('/admin') }}">Start Bootstrap</a>
+    <a class="navbar-brand" href="{{ url('/dashboard') }}">Start Bootstrap</a>
     <div id="google_translate_element"></div>
 
 <script type="text/javascript">
@@ -32,7 +32,7 @@ function googleTranslateElementInit() {
 </script>
 
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <a class="navbar-brand" href="{{ url('/admin') }}">Startup Ignitor</a>
+    <a class="navbar-brand" href="{{ url('/dashboard') }}">Startup Ignitor</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
