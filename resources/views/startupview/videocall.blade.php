@@ -137,7 +137,7 @@ onBistriConferenceReady = function () {
  
 // when button "Join Conference Room" has been clicked
 function joinConference(){
-   var roomToJoin = "SIH";
+   var roomToJoin = "ABC";
    // if "Conference Name" field is not empty ...
    if( roomToJoin ){
        // ... join the room
@@ -199,7 +199,7 @@ function q( query ){
             background-color:#E6E6FA;
             }          
             .container-fluid{
-            background-image: linear-gradient(90deg, #4b6cb7, #182848);
+            background-image: linear-gradient(20deg, #ff8c66,#d966ff);
             }
  
  
@@ -208,19 +208,19 @@ function q( query ){
 <body>
     <div class="container-fluid" style="height:100px ">
             <div>
-                <h1 class="col-sm-12 col-lg-9" style="top:25%"><strong><em>RANDOM</strong></em></h1>
+                <h1 class="text-center col-sm-12 col-lg-9" style="top:25%"><strong><em>Mentors</strong></em></h1>
             </div>
             <div class="col-sm-12 col-lg-3" style="position:relative; top:25%; right:5%;">
  
-                <button id="profile" type="button" style=" float:right; display:block;" class="btn btn-lg btn-success">Profile</button>
+                <button id="profile" type="button" style=" float:right; display:block;" class="btn btn-lg btn-danger">Profile</button>
  
-                <button type="button" style=" float:right; margin-right:10px " class="btn btn-lg btn-success">Courses</button>
+                
             </div>
      </div>
     <div class="pane" id="pane_1" style="display: block">
  
         <br>
-        <input type="button" value="Join Yoga lecture" id="join" class="btn btn-lg btn-success">
+        <input type="button" value="Video-call" id="join" class="btn btn-lg btn-success">
     </div>
    
     <div class=" pane" id="pane_2" style="display: none">
@@ -230,4 +230,3 @@ function q( query ){
     </div>
 </body>
 </html>
-RAW Paste Data

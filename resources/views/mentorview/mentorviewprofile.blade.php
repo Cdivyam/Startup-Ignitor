@@ -105,7 +105,11 @@ body{
             <div class="col-md-4">
                 <div class="profile-img">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog" alt="" style=" width: 200px;height: 250px;">>
-                    <div class="file btn btn-lg btn-primary">
+                    <br>
+                    <br>
+                    
+                    <div class="file btn btn-sm btn-primary">
+                        
                         Change Photo
                         <input type="file" name="file"/>
                     </div>
@@ -133,6 +137,7 @@ body{
             <div class="col-md-2">
                 <input type="submit" class="profile-edit-btn" name="btnAddMore" value="Edit Profile"/>
             </div>
+            
         </div>
         <div class="row">
             <div class="col-md-4">
@@ -244,5 +249,11 @@ body{
                 </div>
             </div>
         </div>
+        <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <button class="btn btn-success btn-md">Accept</button>
+                        <button class="btn btn-danger btn-md">Reject</button>
+                     </div>
+         </div>
     </form>           
 </div>
