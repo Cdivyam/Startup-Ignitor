@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mentee;
 use Illuminate\Http\Request;
 
 class StartupController extends Controller
@@ -16,7 +17,7 @@ class StartupController extends Controller
     }
     public function menteeapplyform(){
 
-        return view('startupview.menteeapplyform');
+        return view('startupview.profilefill');
     }
 
 
@@ -65,7 +66,7 @@ class StartupController extends Controller
         return redirect('/dashboard');
     }
 
-    
+
     public function mouform()
     {
         return view('startupview.mouform');

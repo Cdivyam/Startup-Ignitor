@@ -114,7 +114,8 @@ button:hover {
         </div>
       </div>
     </div>
-    <form id="regForm" action={{ action('StartupController@store') }}>
+    <form id="regForm" action="/menteeprofilestore" method = "POST">
+      {{ csrf_field() }}
   <h2>Mentee Registration Form</h2>
   <!-- One "tab" for each step in the form: -->
   <div class="tab">Startup Name:
@@ -203,16 +204,16 @@ button:hover {
     Sector<p><input placeholder="Enter your Sector..." onfocus="this.value=''" oninput="this.className = ''" name="Sector" required></p>
     Industry<p><input placeholder="Enter your industry..." onfocus="this.value=''" oninput="this.className = ''" name="Industry" required  ></p>
     Preferred Stage:<div class="radio">
-      <label><input type="radio" name="optradio" style=" width: 50px;">Ideation</label>
+      <label><input type="radio" name="optradio" style=" width: 50px;" value="Ideation">Ideation</label>
     </div>
     <div class="radio">
-      <label><input type="radio" name="optradio"style=" width: 50px;">Validation</label>
+      <label><input type="radio" name="optradio"style=" width: 50px;" value="Validation">Validation</label>
     </div>
     <div class="radio">
-      <label><input type="radio" name="optradio"style=" width: 50px;">Early Traction</label>
+      <label><input type="radio" name="optradio"style=" width: 50px;" value="Early Traction">Early Traction</label>
     </div>
      <div class="radio">
-      <label><input type="radio" name="optradio"style=" width: 50px;">Scaling</label>
+      <label><input type="radio" name="optradio"style=" width: 50px;" value="Scaling">Scaling</label>
     </div>
   </div>
   <div class="tab">

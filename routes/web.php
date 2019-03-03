@@ -47,7 +47,7 @@ Route::get('/stakeholderform','StakeholderController@stakeholderform'); //
 
 // Mentor routes tanya
 Route::get('/mouform','StartupController@mouform');
-Route::get('/menteeapplyform', 'StartupController@menteeapplyform');
+Route::get('/menteeapplyform', 'StartupController@menteeapplyform')->name('menteeapplyform.create');
 Route::get('/admin/mentor-inital','MentorController@index')->name('mentor.auth');
 Route::get('/chat', 'StartupController@chat');
 Route::get('/videocall', 'StartupController@videocall');
@@ -113,7 +113,7 @@ Route::get('/dashboard','StartupController@dashboard')->name('startup.auth');
 
 
 //divyam
-Route::post('/menteeapplyform', 'StartupController@store');
+Route::post('/menteeprofilestore', 'StartupController@store');
 
 
 
