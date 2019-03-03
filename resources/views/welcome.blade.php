@@ -232,7 +232,7 @@ Welcome Slider
                       <li>Getting help from mentors to connect them with appropriate resources & giving them an overview using curated data information.</li>
                       <li>One click application for startups wanting them to connect with ecosystem stakeholders like Incubators,Accelerators & Investors.</li>
                       <li>This is a user-friendly & interactive application which provides interaction between mentee & different stakeholders.</li>
-                      <li>Connecting mentors to relevent organization, with the help of an optimized filter alogorithm.</li>
+                      <li>Connecting mentors to relevant organization, with the help of an optimized filter algorithm.</li>
                   </ul>
           <a href="/how-to" class="btn btn-main mt-20">Know More</a>
         </div>

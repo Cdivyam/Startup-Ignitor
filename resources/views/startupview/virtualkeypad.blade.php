@@ -1,4 +1,4 @@
-@extends('mentorview.app')
+@extends('startupview.app')
 
 @section('content')
 
@@ -7,18 +7,19 @@
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="/dashboard">Dashboard</a>
+          <a href="/menteeapplyform">REGISTRATION</a>
         </li>
-       
+        <li class="breadcrumb-item active"><a href="/mouform">MEMORANDUM OF UNDERSTANDING</a></li>
       </ol>
       <div class="row">
         <div class="col-12">
-          <h1 class="text-center">Mentor</h1>
-          <p class="text-center"><strong>YOU ARE LOGGED IN. YOUR ACCOUNT IS: {{auth()->user()->verified() ? 'VERIFIED' : 'not verified'}}</strong></p>
+          <h1 class="text-center">Mentee</h1>
         </div>
       </div>
     </div>
     <!-- /.container-fluid-->
+    <input id="testvirtual" class="jQKeyboard" type="text" value="" placeholder="testing" />
+
     <!-- /.content-wrapper-->
     <footer class="sticky-footer">
       <div class="container">

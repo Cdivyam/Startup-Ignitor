@@ -32,6 +32,7 @@ Route::get('/stakeholdersprofile','StakeholderController@stakeholdersprofile');
 Route::get('/reglvl1','StakeholderController@reglvl1');
 Route::get('/reglvl2','StakeholderController@reglvl2');
 Route::get('/profile','StakeholderController@profile');
+Route::get('/vitualkeypad','StartupController@vitualkeypad');
 
 //Stakeholder routes sanya
 // Route::get('/admin/Startup-inital','StartupController@index'); //not working
@@ -47,7 +48,7 @@ Route::get('/stakeholderform','StakeholderController@stakeholderform'); //
 
 // Mentor routes tanya
 Route::get('/mouform','StartupController@mouform');
-Route::get('/menteeapplyform', 'StartupController@menteeapplyform');
+Route::get('/menteeapplyform', 'StartupController@menteeapplyform')->name('menteeapplyform.create');
 Route::get('/admin/mentor-inital','MentorController@index')->name('mentor.auth');
 Route::get('/chat', 'StartupController@chat');
 Route::get('/videocall', 'StartupController@videocall');
@@ -81,6 +82,7 @@ Route::get('/list_mentors','StartupController@list_mentors');
 // Route::get('/admin/stakeholder-inital','StakeholderController@index');
 Route::post('/admin/reglvl1', 'StakeholderController@store');
 //abhishek
+
 Route::get('/dashboard','StartupController@dashboard')->name('startup.auth');
 
 Route::get('/dashboard','StartupController@dashboard')->name('startup.auth');
@@ -92,6 +94,11 @@ Route::get('/myapplication','MentorController@myapplication');
 Route::get('/mystats','MentorController@mystats');
 Route::get('/blacklists','MentorController@blacklists');
 Route::get('/mentorviewprofile','MentorController@mentorviewprofile');
+Route::get('/mentorviewprofile_2','MentorController@mentorviewprofile2');
+Route::get('/requestmentorship','StartupController@requestmentorship');
+Route::get('/online','StartupController@online');
+Route::get('/physical','StartupController@physical');
+
 
 
 
@@ -105,7 +112,9 @@ Route::get('/mentorviewprofile','MentorController@mentorviewprofile');
 
 //tanya
 Route::get('/stakeholderdashboard','StakeholderController@stakeholderdashboard');
+
 Route::get('/mentorapplyform','MentorController@mentorapplyform');
+Route::post('/mentorapplyform','MentorController@store');
 
 
 
@@ -123,7 +132,7 @@ Route::get('/verify/{token}','VerifyController@verify')->name('verify');
 
 
 //divyam
-
+Route::post('/menteeprofilestore', 'StartupController@store');
 
 
 

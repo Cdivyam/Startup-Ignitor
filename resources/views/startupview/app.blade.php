@@ -27,7 +27,7 @@
         
 @endempty
 
-
+@include('datarep.messages')
 @yield('content')
 
 

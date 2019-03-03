@@ -104,7 +104,7 @@ body{
         <div class="row">
             <div class="col-md-4">
                 <div class="profile-img">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS52y5aInsxSm31CvHOFHWujqUx_wWTS9iM6s7BAm21oEN_RiGoog" alt="" style=" width: 200px;height: 250px;">>
+                    <img src="bingoimages/client-logo/clients-1.jpg" alt="" style=" width: 200px;height: 250px;">>
                     <br>
                     <br>
                     
@@ -118,12 +118,12 @@ body{
             <div class="col-md-6">
                 <div class="profile-head">
                             <h5>
-                                Kshiti Ghelani
+                                John Doe
                             </h5>
                             <h6>
-                                Web Developer and Designer
+                                Graphic Designer
                             </h6>
-                            <p class="proile-rating">RANKINGS : <span>8/10</span></p>
+                            <p class="proile-rating">RANKINGS : <span>9/10</span></p>
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About</a>
@@ -148,9 +148,9 @@ body{
                     <a href="">Bootply Profile</a>
                     <p>SKILLS</p>
                     <a href="">Web Designer</a><br/>
-                    <a href="">Web Developer</a><br/>
+                    
                     <a href="">WordPress</a><br/>
-                    <a href="">WooCommerce</a><br/>
+                    
                     <a href="">PHP, .Net</a><br/>
                 </div>
             </div>
@@ -162,7 +162,7 @@ body{
                                         <label>User Id</label>
                                     </div>
                                     <div class="col-md-6">
-                                        <p>Kshiti123</p>
+                                        <p>JDoe_</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -170,7 +170,7 @@ body{
                                         <label>Name</label>
                                     </div>
                                     <div class="col-md-6">
-                                        <p>Kshiti Ghelani</p>
+                                        <p>John Doe</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -178,7 +178,7 @@ body{
                                         <label>Email</label>
                                     </div>
                                     <div class="col-md-6">
-                                        <p>kshitighelani@gmail.com</p>
+                                        <p>johndoe@gmail.com</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -186,7 +186,7 @@ body{
                                         <label>Phone</label>
                                     </div>
                                     <div class="col-md-6">
-                                        <p>123 456 7890</p>
+                                        <p>675544456</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -194,7 +194,7 @@ body{
                                         <label>Profession</label>
                                     </div>
                                     <div class="col-md-6">
-                                        <p>Web Developer and Designer</p>
+                                        <p>Graphic Designer</p>
                                     </div>
                                 </div>
                     </div>
@@ -204,7 +204,7 @@ body{
                                         <label>Experience</label>
                                     </div>
                                     <div class="col-md-6">
-                                        <p>Expert</p>
+                                        <p>Semi-Professional</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -212,7 +212,7 @@ body{
                                         <label>Hourly Rate</label>
                                     </div>
                                     <div class="col-md-6">
-                                        <p>10$/hr</p>
+                                        <p>8$/hr</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -220,7 +220,7 @@ body{
                                         <label>Total Projects</label>
                                     </div>
                                     <div class="col-md-6">
-                                        <p>230</p>
+                                        <p>178</p>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -236,7 +236,7 @@ body{
                                         <label>Availability</label>
                                     </div>
                                     <div class="col-md-6">
-                                        <p>6 months</p>
+                                        <p>3 months</p>
                                     </div>
                                 </div>
                         <div class="row">
