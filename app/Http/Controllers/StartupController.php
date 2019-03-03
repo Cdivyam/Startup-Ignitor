@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mentee;
 use Illuminate\Http\Request;
 
 class StartupController extends Controller
@@ -16,15 +17,16 @@ class StartupController extends Controller
     }
     public function menteeapplyform(){
 
-        return view('startupview.menteeapplyform');
+        return view('startupview.profilefill');
     }
+
+
     public function store(Request $request){
         $this->validate($request, [
             'name' => 'required',
             'country' => 'required',
             'city' => 'required',
             'state' => 'required',
-            'phone' => 'required',
             'phone' => 'required',
             'address' => 'required',
             'description' => 'required',
@@ -59,10 +61,12 @@ class StartupController extends Controller
         $mentee->description = $request->input('description');
         $mentee->industry = $request->input('industry');
         $mentee->sector = $request->input('sector');
-        $mente->image = $fileNameToStore;
-        $post->save();
-        return redirect('/posts')->with('success', 'Post Created');
+        $mentee->image = $fileNameToStore;
+        $mentee->save();
+        return redirect('/dashboard');
     }
+
+
     public function mouform()
     {
         return view('startupview.mouform');

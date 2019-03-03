@@ -94,16 +94,16 @@ function googleTranslateElementInit() {
                 </a>
                 <ul class="sidenav-second-level collapse" id="collapseExamplePages">
                     <li>
-                        <a href="{{ url('/chat') }}">Chats</a>
+                        <a href="{{ url('http://localhost:8009/chats') }}">Chats</a>
                     </li>
                     <li>
-                        <a href="{{ url('/videocall') }}">Video Call</a>
+                        <a href="{{ url('http://localhost/video.php') }}">Video Call</a>
                     </li>
                     <li>
-                        <a href="{{ url('/admin/register') }}">Forums</a>
+                        <a href="{{ url('http://localhost/StartupIgnitor_forum/public/') }}">Forums</a>
                     </li>
                     <li>
-                        <a href="{{ url('/admin/register') }}">Blogs</a>
+                        <a href="{{ url('http://blogs.startupigniter.test/blogs') }}">Blogs</a>
                     </li>
                 </ul>
             </li>

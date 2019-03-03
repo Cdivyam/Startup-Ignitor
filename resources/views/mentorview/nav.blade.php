@@ -33,14 +33,14 @@
             </li>
 
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Blogs">
-                    <a class="nav-link" href="{{ url('/data_repository/create') }}">
+                    <a class="nav-link" href="{{ url('http://blogs.startupigniter.test/blogs') }}">
                         <i class="fa fa-fw fa-tags"></i>
                         <span class="nav-link-text">Blogs</span>
                     </a>
             </li>
 
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Forums">
-                <a class="nav-link" href="{{ url('/admin/tables') }}">
+                <a class="nav-link" href="{{ url('http://localhost/StartupIgnitor_forum/public/') }}">
                     <i class="fa fa-fw fa-group"></i>
                     <span class="nav-link-text">Forums</span>
                 </a>
