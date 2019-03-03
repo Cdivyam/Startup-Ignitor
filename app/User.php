@@ -30,4 +30,13 @@ class User extends Authenticatable
     public function stakeholder(){
         return $this->hasMany('App\StakeHolder');
     }
+
+    public function mentor(){
+        return $this->hasMany('App\Mentor');
+    }
+
+    public function mentee(){
+        return $this->hasMany('App\Mentee');
+    }
+    
 }

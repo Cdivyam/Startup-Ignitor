@@ -113,7 +113,7 @@ Route::get('/dashboard','StartupController@dashboard')->name('startup.auth');
 
 
 //divyam
-
+Route::post('/menteeapplyform', 'StartupController@store');
 
 
 

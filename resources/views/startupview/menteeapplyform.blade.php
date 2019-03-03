@@ -114,7 +114,7 @@ button:hover {
         </div>
       </div>
     </div>
-    <form id="regForm" action="/StartupController@store">
+    <form id="regForm" action={{ action('StartupController@store') }}>
   <h2>Mentee Registration Form</h2>
   <!-- One "tab" for each step in the form: -->
   <div class="tab">Startup Name:

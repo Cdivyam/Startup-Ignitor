@@ -19,4 +19,9 @@ class Mentor extends Model
     public function data() {
         return $this->hasMany('App\DataRepository');
     }
+
+    public function user(){
+        return $this->belongsTo('App\User', 'foreign key', 'user_id');
+    }
+
 }
