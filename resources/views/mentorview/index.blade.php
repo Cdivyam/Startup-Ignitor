@@ -7,14 +7,14 @@
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="index.html">Dashboard</a>
+          <a href="/dashboard">Dashboard</a>
         </li>
-        <li class="breadcrumb-item active"><a href="#">Your Uploads</li>
+       
       </ol>
       <div class="row">
         <div class="col-12">
           <h1 class="text-center">Mentor</h1>
-          
+          <p>you are logged in. your account is: {{auth()->user()->verified() ? 'verified' : 'not verified'}}
         </div>
       </div>
     </div>

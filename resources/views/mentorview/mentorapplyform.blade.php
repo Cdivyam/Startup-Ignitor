@@ -1,14 +1,17 @@
-@extends('stakeholders.app')
+@extends('startupview.app')
 
 @section('content')
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <style>
 * {
   box-sizing: border-box;
 }
-
-body {
-  background-color: #f1f1f1;
+::placeholder {
+  color:black ;
+  opacity: 1; /* Firefox */
 }
+
 input[type=text], select, textarea {
   width:100%;
   padding: 12px;
@@ -19,10 +22,12 @@ input[type=text], select, textarea {
   margin-bottom: 16px;
   resize: vertical;
 }
+body {
+  background-color:#00b300;
+}
 
 #regForm {
   background-image: linear-gradient(20deg, #ffe6e6,#ccffcc);
-  background-color: #ffffff;
   margin: 100px auto;
   font-family: Raleway;
   padding: 40px;
@@ -31,7 +36,7 @@ input[type=text], select, textarea {
   box-shadow: -12px -17px 9px 0px rgba(144, 172,203,0.25)
 }
 
-h1 {
+h2 {
   text-align: center;  
 }
 
@@ -42,9 +47,7 @@ input {
   font-family: Raleway;
   border: 1px solid #aaaaaa;
 }
-input.type{
-  width: 100%
-}
+
 /* Mark input boxes that gets an error on validation: */
 input.invalid {
   background-color: #ffdddd;
@@ -97,57 +100,52 @@ button:hover {
 
   <div class="content-wrapper">
     <div class="container-fluid">
+
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
-      <li class="breadcrumb-item">
-          <p>Startup Ignitor</p>
-        </li>
         <li class="breadcrumb-item">
-          <a href="/stakeholderdashboard">Dashboard</a>
+          <a href="/dashboard">HOME</a>
         </li>
-        <li class="breadcrumb-item active">Your Uploads</li>
+        <li class="breadcrumb-item active"><a href="#">REGISTRATION</a></li>
       </ol>
       <div class="row">
         <div class="col-12">
-          <h1 class="text-center">Stakeholder Registration</h1>
-          <form id="regForm" action="StakeholderController@store">
-  <h1>Register:</h1>
+          <h1>Registration</h1>
+        </div>
+      </div>
+    </div>
+    <form id="regForm" action="/StartupController@store">
+  <h2>Mentor Registration Form</h2>
   <!-- One "tab" for each step in the form: -->
-  <div class="tab">Organisation Name:
-    <p><input placeholder="Enter name..."onfocus="this.value=''" oninput="this.className = ''" name="name"></p>
-    Type:<div class="radio" >
-      <label><input type="radio" name="optradio" style=" width: 50px;">Incubators</label>
-    </div>
-    <div class="radio">
-      <label><input type="radio" name="optradio"style=" width: 50px;">Acclerators</label>
-    </div>
-    <div class="radio">
-      <label><input type="radio" name="optradio"style=" width: 50px;">Investors</label>
-    </div>
-     <div class="radio">
-      <label><input type="radio" name="optradio"style=" width: 50px;">Service Provider</label>
-    </div>
-    Preferred Stage:<div class="radio">
-      <label><input type="radio" name="optradio" style=" width: 50px;">Ideation</label>
-    </div>
-    <div class="radio">
-      <label><input type="radio" name="optradio"style=" width: 50px;">Validation</label>
-    </div>
-    <div class="radio">
-      <label><input type="radio" name="optradio"style=" width: 50px;">Early Traction</label>
-    </div>
-     <div class="radio">
-      <label><input type="radio" name="optradio"style=" width: 50px;">Scaling</label>
-    </div>
+  <div class="tab">Position:
+    <p><input placeholder="Enter your name..." onfocus="this.value=''" oninput="this.className = ''" name="name" ></p>
     
-    Industry<p><input placeholder="Enter your industry..." onfocus="this.value=''" oninput="this.className = ''" name="Industry" required></p>
-    Sector<p><input placeholder="Enter your sector..." onfocus="this.value=''" oninput="this.className = ''" name="Sector" required  ></p>
-    Services<p><input placeholder="Enter your services..." onfocus="this.value=''" oninput="this.className = ''" name="Services" required  ></p>
-    Resources<p><input placeholder="Enter your resources..." onfocus="this.value=''" oninput="this.className = ''" name="Resources" required  ></p>
-    <!--<label for="Country">Country</label>
-    <select id="country" name="Country">
-      <option value="India">India</option>
+    <label for="Ministry">Ministry</label>
+    <select id="ministry" name="Ministry">
+      <option value="">Ministry of science</option>
+      <option value="">Ministry of electronics</option>
+      <option value="">Ministry of finance</option>
+      <option value="">Ministry of food Processing Industry</option>
+      <option value="">Ministry of health and services</option>
     </select>
+    
+    <label for="Departments">Departments</label>
+    <select id="departments" name="departments">
+      <option value="">Department of science</option>
+      <option value="">Department of electronics</option>
+      <option value="">Department of Technology</option>
+      <option value="">Department of Mechanical</option>
+      <option value="">Department of Aerospace</option>
+    </select>
+
+    <label for="subject">Application Link</label>
+    <textarea id="subject" onfocus="this.value=''" name="subject" placeholder="Give your Application link.." style="height:100px"></textarea> 
+    <label for="subject">Website/Social media URL</label>
+    <textarea id="subject" onfocus="this.value=''" name="subject" placeholder="Give your website/social media URl.." style="height:100px"></textarea> 
+ <div class="tab">
+ Sector<p><input placeholder="Enter your Sector..." onfocus="this.value=''" oninput="this.className = ''" name="Sector" required></p>
+    Industry<p><input placeholder="Enter your industry..." onfocus="this.value=''" oninput="this.className = ''" name="Industry" required  ></p>
+    
     <label for="City">City</label>
     <select id="City" name="City">
       <option value="Mumbai">Mumbai</option>
@@ -214,21 +212,28 @@ button:hover {
       <option value="Punjab">Punjab</option>
       <option value="Tamil-nadu">Tamil Nadu</option>
     </select>
-    <label for="email">Email</label>
-    <p><input type="email" value="" onfocus="this.value=''" placeholder="name@email.com" required /></p>-->
-    Government-Funded<p><input placeholder="Government-Funded..." onfocus="this.value=''" oninput="this.className = ''" name="government_funded" required  ></p>
-    <label for="phonenumber">Phone Number</label>
-    <p><input type="tel" placeholder="Phone Number..." onfocus="this.value=''" oninput="this.className = ''" name="phone"></p>
-    Organisation Location<p><input placeholder="Enter organisation location..."onfocus="this.value=''" oninput="this.className = ''" name="organisationName"></p>
-    About Yourself<textarea id="subject" onfocus="this.value=''" name="subject" placeholder="Write something.." style="height:100px"></textarea>
-    
   </div>
-   <div class="tab">Documents:
-     Upload Your Image<p><input type="file" name="pic" accept="image/*"></p>
-     Upload Your Organisation Certificate<p><input type="file" name="pic" accept="image/*"></p>
-     Upload Your Approval letter<p><input type="file" name="pic" accept="image/*"></p>
 
+  <div class="tab">Phone Number:
+    <p><input type="tel" placeholder="Phone..." onfocus="this.value=''" oninput="this.className = ''" name="phone"></p>
+    <label for="subject">Address</label>
+    <textarea id="subject" onfocus="this.value=''" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+    <label for="subject">Description</label>
+    <textarea id="subject" onfocus="this.value=''" name="subject" placeholder="Write something.." style="height:100px"></textarea> 
+    Upload Your Image<p><input type="file" name="pic" accept="image/*"></p>   
   </div>
+  <!--<div class="tab">
+  Mentorship Required:<div class="checkbox">
+    <label><input type="checkbox" value="" style="width: 25px;">Chat</label>
+    </div>
+    <div class="checkbox">
+    <label><input type="checkbox" value="" style="width: 25px;">One to One video confrencing</label>
+    </div>
+    <div class="checkbox">
+    <label><input type="checkbox" value="" style="width: 25px;">Meeting</label>
+    </div>
+    
+  </div>-->
   <div style="overflow:auto;">
     <div style="float:right;">
       <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
@@ -243,20 +248,8 @@ button:hover {
     <span class="step"></span>
   </div>
 </form>
-
-          
-        </div>
-      </div>
-    </div>
     <!-- /.container-fluid-->
     <!-- /.content-wrapper-->
-    <footer class="sticky-footer">
-      <div class="container">
-        <div class="text-center">
-          <small>Copyright © Startup Ignitor 2019</small>
-        </div>
-      </div>
-    </footer>
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
       <i class="fa fa-angle-up"></i>
@@ -281,6 +274,15 @@ button:hover {
     </div>
   </div>
 <script>
+function myFunction() {
+  var z = document.getElementById("myInput");
+  if (z.type === "password") {
+    z.type = "text";
+  } else {
+    z.type = "password";
+  }
+}
+
 var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
 
@@ -335,6 +337,9 @@ function validateForm() {
       y[i].className += " invalid";
       // and set the current valid status to false
       valid = false;
+      if (y[i].type=="file") {
+        valid="true"
+      }
     }
   }
   // If the valid status is true, mark the step as finished and valid:

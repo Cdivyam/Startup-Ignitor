@@ -4,7 +4,7 @@
             <!-- section title --> 
             <div class="title text-center" style=" padding-top: 0px;padding-bottom: 0px;">
                 <h2>Are You a Service -Provider? </h2>
-                <p>help startups with array of services.</p>
+                <p>Help startups with an array of services.</p>
                 <div class="border"></div>
             </div>
             <!-- /section title -->

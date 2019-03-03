@@ -218,7 +218,7 @@ Welcome Slider
         <!-- section title -->
         <div class="title text-center"  >
           <h2>We offer services for startups </h2>
-          <p>this platform serves as a catalyst for any startup or individual mentee to ignite his work, getting help from Government Officers and in directing other different entity directly using communiction tools</p>
+          <p>This platform serves as a catalyst for any startup or individual mentee to ignite his work, getting help from Government Officers and in directing other different entities directly using communiction tools</p>
           <div class="border"></div>
         </div>
         <!-- /section title -->
@@ -229,12 +229,12 @@ Welcome Slider
         <div class="col-md-6">
           <ul class="checklist">
                       <a href="/"><li>Educating & introducing startups with resources and services provided by private organization.</li></a>
-                      <li>getting help from mentors to connect them with right resources & giving them an overview using curated data information</li>
-                      <li>one click application for startups wanting them to connect with ecosystem stakeholders like incubators,Accelerators & investors</li>
-                      <li>this is a user-friendly & interactive application which provides interaction between mentee & different stakeholders</li>
-                      <li>connecting mentors to relevent organization. with an optimized filter alogorithm</li>
+                      <li>Getting help from mentors to connect them with appropriate resources & giving them an overview using curated data information.</li>
+                      <li>One click application for startups wanting them to connect with ecosystem stakeholders like Incubators,Accelerators & Investors.</li>
+                      <li>This is a user-friendly & interactive application which provides interaction between mentee & different stakeholders.</li>
+                      <li>Connecting mentors to relevent organization, with the help of an optimized filter alogorithm.</li>
                   </ul>
-          <a href="/how-to" class="btn btn-main mt-20">Learn More</a>
+          <a href="/how-to" class="btn btn-main mt-20">Know More</a>
         </div>
       </div> 		<!-- End row -->
     </div>   	<!-- End container -->

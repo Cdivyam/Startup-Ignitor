@@ -80,21 +80,11 @@ function googleTranslateElementInit() {
                 </a>
             </li>
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="My Applications">
-                <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
+                <a class="nav-link " href="/application" >
                     <i class="fa fa-fw fa-wrench"></i>
                     <span class="nav-link-text">My Applications</span>
                 </a>
-                <ul class="sidenav-second-level collapse" id="collapseComponents">
-                    <li>
-                        <a href="{{ url('/admin/navbar') }}">Accepted</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('/admin/cards') }}">Rejected</a>
-                    </li>
-                    <li>
-                        <a href="{{ url('/admin/cards') }}">Pending</a>
-                    </li>
-                </ul>
+                
             </li>
             
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="My Network">
