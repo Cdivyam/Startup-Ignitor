@@ -9,7 +9,7 @@
         <li class="breadcrumb-item">
           <a href="index.html">Dashboard</a>
         </li>
-        <li class="breadcrumb-item active"><a href="#">Your Uploads</li>
+       
       </ol>
       <div class="row">
         <div class="col-12">
