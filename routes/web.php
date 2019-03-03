@@ -101,7 +101,7 @@ Route::get('/dashboard','StartupController@dashboard')->name('startup.auth');
 
 
 //prakash
-
+Route::get('/verify/{token}','VerifyController@verify')->name('verify');
 
 
 
