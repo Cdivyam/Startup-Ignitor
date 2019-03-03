@@ -115,13 +115,33 @@ button:hover {
       </div>
     </div>
     <form id="regForm" action="/StartupController@store">
-  <h2>Mentee Registration Form</h2>
+  <h2>Mentor Registration Form</h2>
   <!-- One "tab" for each step in the form: -->
   <div class="tab">Position:
     <p><input placeholder="Enter your name..." onfocus="this.value=''" oninput="this.className = ''" name="name" ></p>
-    Ministry<p><input placeholder="Enter your Ministry..." onfocus="this.value=''" oninput="this.className = ''" name="Sector" required></p>
-    Department<p><input placeholder="Enter your Department..." onfocus="this.value=''" oninput="this.className = ''" name="Industry" required  ></p>
- </div>
+    
+    <label for="Ministry">Ministry</label>
+    <select id="ministry" name="Ministry">
+      <option value="">Ministry of science</option>
+      <option value="">Ministry of electronics</option>
+      <option value="">Ministry of finance</option>
+      <option value="">Ministry of food Processing Industry</option>
+      <option value="">Ministry of health and services</option>
+    </select>
+    
+    <label for="Departments">Departments</label>
+    <select id="departments" name="departments">
+      <option value="">Department of science</option>
+      <option value="">Department of electronics</option>
+      <option value="">Department of Technology</option>
+      <option value="">Department of Mechanical</option>
+      <option value="">Department of Aerospace</option>
+    </select>
+
+    <label for="subject">Application Link</label>
+    <textarea id="subject" onfocus="this.value=''" name="subject" placeholder="Give your Application link.." style="height:100px"></textarea> 
+    <label for="subject">Website/Social media URL</label>
+    <textarea id="subject" onfocus="this.value=''" name="subject" placeholder="Give your website/social media URl.." style="height:100px"></textarea> 
  <div class="tab">
  Sector<p><input placeholder="Enter your Sector..." onfocus="this.value=''" oninput="this.className = ''" name="Sector" required></p>
     Industry<p><input placeholder="Enter your industry..." onfocus="this.value=''" oninput="this.className = ''" name="Industry" required  ></p>

@@ -99,8 +99,11 @@ button:hover {
     <div class="container-fluid">
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+          <p>Startup Ignitor</p>
+        </li>
         <li class="breadcrumb-item">
-          <a href="#">Dashboard</a>
+          <a href="/stakeholderdashboard">Dashboard</a>
         </li>
         <li class="breadcrumb-item active">Your Uploads</li>
       </ol>

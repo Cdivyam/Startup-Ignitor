@@ -27,4 +27,9 @@ class MentorController extends Controller
         return view('mentorview.update');
     }
 
+    public function mentorapplyform()
+    {
+        return view('mentorview.mentorapplyform');
+    }
+
 }

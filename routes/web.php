@@ -103,7 +103,8 @@ Route::get('/viewprofile','StartupController@viewprofile');
 
 
 //tanya
-
+Route::get('/stakeholderdashboard','StakeholderController@stakeholderdashboard');
+Route::get('/mentorapplyform','MentorController@mentorapplyform');
 
 
 
