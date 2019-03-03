@@ -42,7 +42,7 @@
                               <img src="" alt="profile-image" class="profile"/>
                               <h5 class="card-title"><a href="#">Name</a></h5>
                               <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
-                              <a href="#" class="btn btn-primary">View profile</a>
+                              <a href="/viewprofile" class="btn btn-primary">View profile</a>
                               <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
                           </div>
                       </div>
@@ -95,7 +95,7 @@
                                         <img src="" alt="profile-image" class="profile"/>
                                         <h5 class="card-title"><a href="#">Name</a></h5>
                                         <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
-                                        <a href="#" class="btn btn-primary">View profile</a>
+                                        <a href="/viewprofile" class="btn btn-primary">View profile</a>
                                         <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
                                     </div>
                                 </div>

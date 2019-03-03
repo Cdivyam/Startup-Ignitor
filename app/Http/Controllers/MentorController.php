@@ -26,10 +26,26 @@ class MentorController extends Controller
     {
         return view('mentorview.update');
     }
+    public function myapplication()
+    {
+        return view('mentorview.myapplication');
+    }
+    public function mystats()
+    {
+        return view('mentorview.mystats');
+    }
+    public function blacklists()
+    {
+        return view('mentorview.blacklists');
+    }
 
     public function mentorapplyform()
     {
         return view('mentorview.mentorapplyform');
+    }
+    public function mentorviewprofile()
+    {
+        return view('mentorview.mentorviewprofile');
     }
 
 }

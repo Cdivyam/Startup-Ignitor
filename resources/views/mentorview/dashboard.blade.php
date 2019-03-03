@@ -14,7 +14,7 @@
         </li>
         
         <li class="breadcrumb-item">
-          <a href="#">Update Profile</a>
+          <a href="/update">Update Profile</a>
       </ol>
       <!-- Icon Cards-->
       <div class="row">
