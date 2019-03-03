@@ -47,6 +47,10 @@ class MentorController extends Controller
     {
         return view('mentorview.mentorviewprofile');
     }
+    public function mentorviewprofile2()
+    {
+        return view('mentorview.mentorviewprofile_2');
+    }
     public function virtualkeypad()
     {
         return view('mentorview.virtualkeypad');

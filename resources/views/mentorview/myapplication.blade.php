@@ -115,7 +115,7 @@
                            <div class="card profile-card-2">                                   
                                    <div class="card-body pt-5" class="card-body text-dark">
                                        <img src="" alt="profile-image" class="profile"/>
-                                       <h5 class="card-title"><a href="#">A</a></h5>
+                                       <h5 class="card-title"><a href="#">Kshiti Ghelani</a></h5>
                                        <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
                                        <a href="/mentorviewprofile" class="btn btn-primary">View profile</a>
                                        <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
@@ -128,9 +128,9 @@
                                 <div class="card profile-card-2">                                      
                                         <div class="card-body pt-5" class="card-body text-dark">
                                             <img src="" alt="profile-image" class="profile"/>
-                                            <h5 class="card-title"><a href="#">b</a></h5>
+                                            <h5 class="card-title"><a href="#">John Doe</a></h5>
                                             <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
-                                            <a href="#" class="btn btn-primary">View profile</a>
+                                            <a href="/mentorviewprofile_2" class="btn btn-primary">View profile</a>
                                             <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
                                         </div>
                                 </div>
@@ -143,7 +143,7 @@
                                                 
                                                 <div class="card-body pt-5" class="card-body text-dark">
                                                     <img src="" alt="profile-image" class="profile"/>
-                                                    <h5 class="card-title"><a href="#">c</a></h5>
+                                                    <h5 class="card-title"><a href="#">Jane Doe</a></h5>
                                                     <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
                                                     <a href="#" class="btn btn-primary">View profile</a>
                                                     <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>

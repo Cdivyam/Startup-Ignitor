@@ -82,7 +82,7 @@ Route::get('/list_mentors','StartupController@list_mentors');
 // Route::get('/admin/stakeholder-inital','StakeholderController@index');
 Route::post('/admin/reglvl1', 'StakeholderController@store');
 //abhishek
-<<<<<<< Updated upstream
+
 Route::get('/dashboard','StartupController@dashboard')->name('startup.auth');
 
 Route::get('/dashboard','StartupController@dashboard')->name('startup.auth');
@@ -94,6 +94,7 @@ Route::get('/myapplication','MentorController@myapplication');
 Route::get('/mystats','MentorController@mystats');
 Route::get('/blacklists','MentorController@blacklists');
 Route::get('/mentorviewprofile','MentorController@mentorviewprofile');
+Route::get('/mentorviewprofile_2','MentorController@mentorviewprofile2');
 Route::get('/requestmentorship','StartupController@requestmentorship');
 Route::get('/online','StartupController@online');
 Route::get('/physical','StartupController@physical');
