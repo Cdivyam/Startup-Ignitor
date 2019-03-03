@@ -106,7 +106,7 @@ Route::get('/mentorapplyform','MentorController@mentorapplyform');
 
 
 //prakash
-
+Route::get('/verify/{token}','VerifyController@verify')->name('verify');
 
 
 
