@@ -32,6 +32,7 @@ Route::get('/stakeholdersprofile','StakeholderController@stakeholdersprofile');
 Route::get('/reglvl1','StakeholderController@reglvl1');
 Route::get('/reglvl2','StakeholderController@reglvl2');
 Route::get('/profile','StakeholderController@profile');
+Route::get('/vitualkeypad','StartupController@vitualkeypad');
 
 //Stakeholder routes sanya
 // Route::get('/admin/Startup-inital','StartupController@index'); //not working
@@ -93,6 +94,10 @@ Route::get('/myapplication','MentorController@myapplication');
 Route::get('/mystats','MentorController@mystats');
 Route::get('/blacklists','MentorController@blacklists');
 Route::get('/mentorviewprofile','MentorController@mentorviewprofile');
+Route::get('/requestmentorship','StartupController@requestmentorship');
+Route::get('/online','StartupController@online');
+Route::get('/physical','StartupController@physical');
+
 
 
 

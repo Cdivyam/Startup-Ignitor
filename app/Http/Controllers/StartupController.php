@@ -95,4 +95,13 @@ class StartupController extends Controller
     public function viewprofile(){
         return view('startupview.viewprofile');
     }
+    public function requestmentorship(){
+        return view('startupview.requestmentorship');
+    }
+    public function online(){
+        return view('startupview.online');
+    }
+    public function physical(){
+        return view('startupview.physical');
+    }
 }
