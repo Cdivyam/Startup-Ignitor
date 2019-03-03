@@ -4,7 +4,7 @@
             <!-- section title --> 
             <div class="title text-center" style=" padding-top: 0px;padding-bottom: 0px;">
                 <h2>Are You a Mentor ? </h2>
-                <p>help startups with Idea Review</p>
+                <p>Help startups with Idea Review</p>
                 <div class="border"></div>
             </div>
             <!-- /section title -->

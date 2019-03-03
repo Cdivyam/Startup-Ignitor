@@ -117,12 +117,15 @@ button:hover {
     <form id="regForm" action="/StartupController@store">
   <h2>Mentee Registration Form</h2>
   <!-- One "tab" for each step in the form: -->
-  <div class="tab">Startup Name:
+  <div class="tab">Position:
     <p><input placeholder="Enter your name..." onfocus="this.value=''" oninput="this.className = ''" name="name" ></p>
-    <label for="Country">Country</label>
-    <select id="country" name="Country">
-      <option value="India">India</option>
-    </select>
+    Ministry<p><input placeholder="Enter your Ministry..." onfocus="this.value=''" oninput="this.className = ''" name="Sector" required></p>
+    Department<p><input placeholder="Enter your Department..." onfocus="this.value=''" oninput="this.className = ''" name="Industry" required  ></p>
+ </div>
+ <div class="tab">
+ Sector<p><input placeholder="Enter your Sector..." onfocus="this.value=''" oninput="this.className = ''" name="Sector" required></p>
+    Industry<p><input placeholder="Enter your industry..." onfocus="this.value=''" oninput="this.className = ''" name="Industry" required  ></p>
+    
     <label for="City">City</label>
     <select id="City" name="City">
       <option value="Mumbai">Mumbai</option>
@@ -191,32 +194,16 @@ button:hover {
     </select>
   </div>
 
-  <div class="tab">Contact Info:
+  <div class="tab">Phone Number:
     <p><input type="tel" placeholder="Phone..." onfocus="this.value=''" oninput="this.className = ''" name="phone"></p>
     <label for="subject">Address</label>
     <textarea id="subject" onfocus="this.value=''" name="subject" placeholder="Write something.." style="height:100px"></textarea>
     <label for="subject">Description</label>
-    <textarea id="subject" onfocus="this.value=''" name="subject" placeholder="Write something.." style="height:100px"></textarea>    
+    <textarea id="subject" onfocus="this.value=''" name="subject" placeholder="Write something.." style="height:100px"></textarea> 
+    Upload Your Image<p><input type="file" name="pic" accept="image/*"></p>   
   </div>
-  
-  <div class="tab">
-    Sector<p><input placeholder="Enter your Sector..." onfocus="this.value=''" oninput="this.className = ''" name="Sector" required></p>
-    Industry<p><input placeholder="Enter your industry..." onfocus="this.value=''" oninput="this.className = ''" name="Industry" required  ></p>
-    Preferred Stage:<div class="radio">
-      <label><input type="radio" name="optradio" style=" width: 50px;">Ideation</label>
-    </div>
-    <div class="radio">
-      <label><input type="radio" name="optradio"style=" width: 50px;">Validation</label>
-    </div>
-    <div class="radio">
-      <label><input type="radio" name="optradio"style=" width: 50px;">Early Traction</label>
-    </div>
-     <div class="radio">
-      <label><input type="radio" name="optradio"style=" width: 50px;">Scaling</label>
-    </div>
-  </div>
-  <div class="tab">
-  <!--Mentorship Required:<div class="checkbox">
+  <!--<div class="tab">
+  Mentorship Required:<div class="checkbox">
     <label><input type="checkbox" value="" style="width: 25px;">Chat</label>
     </div>
     <div class="checkbox">
@@ -224,9 +211,9 @@ button:hover {
     </div>
     <div class="checkbox">
     <label><input type="checkbox" value="" style="width: 25px;">Meeting</label>
-    </div>-->
-    Upload Your Image<p><input type="file" name="pic" accept="image/*"></p>
-  </div>
+    </div>
+    
+  </div>-->
   <div style="overflow:auto;">
     <div style="float:right;">
       <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
