@@ -114,51 +114,30 @@ button:hover {
         </div>
       </div>
     </div>
-{!!Form::open(['id' => 'regForm', 'action' => 'StartupController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
-    <h2>Mentee Registration Form</h2>
-    {{-- <div class="tab"> --}}
+{!!Form::open(['id' => 'regForm', 'action' => 'MentorController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
+    <h2>Mentor Registration Form</h2>
+  
         <div class = "form-group">
-            {{Form::label('name', 'Startup Name') }}
-            {{Form::text('name','',[ 'class' => 'form-control col-12', 'placeholder' => 'Enter Startup Name']) }}
+            {{Form::label('position', 'Position') }}
+            {{Form::text('position','',[ 'class' => 'form-control col-12', 'placeholder' => 'Your Position']) }}
         </div>
         <div class = "form-group">
-            {{Form::label('country', 'Country') }}
-            {{Form::select('country', array('India')), 'India' }}
+            {{Form::label('ministry', 'Ministry') }}
+            {{Form::select('ministry', array(
+                'Ministry of Science and Technology',
+                'Ministry of Textile',
+                'Ministry of Human Resource and Development',
+                'Ministry of Finance'
+                )) }}
         </div>
         <div class = "form-group">
-            {{Form::label('state', 'State') }}
-            {{Form::select('state', array(
-                'Maharashtra',
-                'Delhi', 
-                'Karnataka', 
-                'Chattisghar'
+            {{Form::label('department', 'Department') }}
+            {{Form::select('department', array(
+                'Department of Industrial Policy and Promotion',
+                'Department of Commerce',
+                'Department of Science and Technology'
                 ))}}
         </div>
-        <div class = "form-group">
-                {{Form::label('city', 'City') }}
-                {{Form::select('city', array(
-                    'Mumbai', 
-                    'New Delhi', 
-                    'Kolkata', 
-                    'Chennai'
-                    ))}}
-        </div>
-    {{-- </div>
-    <div class="tab"> --}}
-        <div class = "form-group">
-            {{Form::label('phone', 'Phone no') }}
-            {{Form::text('phone','',[ 'class' => 'form-control col-4', 'placeholder' => 'Enter Phone number']) }}
-        </div>
-        <div class = "form-group">
-            {{Form::label('address', 'Address') }}
-            {{Form::textarea('address','',[ 'class' => 'form-control col-12', 'placeholder' => 'Enter Address']) }}
-        </div>
-        <div class = "form-group">
-            {{Form::label('description', 'Description') }}
-            {{Form::textarea('description','',[ 'class' => 'form-control col-12', 'placeholder' => 'Enter Description']) }}
-        </div>
-    {{-- </div>
-    <div class="tab"> --}}
         <div class = "form-group">
             {{Form::label('industry', 'Industry') }}
             {{Form::select('industry', array(
@@ -176,11 +155,59 @@ button:hover {
                 'Software Development', 
                 'Automobile'
                 ))}}
+        <div class = "form-group">
+            {{Form::label('state', 'State') }}
+            {{Form::select('state', array(
+                'Maharashtra',
+                'Delhi', 
+                'Karnataka', 
+                'Chattisghar'
+                ))}}
+        </div>
+        <div class = "form-group">
+            {{Form::label('city', 'City') }}
+            {{Form::select('city', array(
+                'Mumbai', 
+                'New Delhi', 
+                'Kolkata', 
+                'Chennai'
+                ))}}
+        </div>
+        <div class = "form-group">
+            {{Form::label('prefered_stage', 'Prefered Stage') }}
+            {{Form::select('prefered_stage', array(
+                'Ideation', 
+                'Validation', 
+                'Early Traction', 
+                'Scaling'
+                ))}}
+        </div>
+        <div class = "form-group">
+            {{Form::label('phone', 'Phone no') }}
+            {{Form::text('phone','',[ 'class' => 'form-control col-4', 'placeholder' => 'Enter Phone number']) }}
+        </div>
+        <div class = "form-group">
+            {{Form::label('address', 'Address') }}
+            {{Form::textarea('address','',[ 'class' => 'form-control col-12', 'placeholder' => 'Enter Address']) }}
+        </div>
+        <div class = "form-group">
+            {{Form::label('description', 'Description') }}
+            {{Form::textarea('description','',[ 'class' => 'form-control col-12', 'placeholder' => 'Enter Description']) }}
+        </div>
+        <div class = "form-group">
+            {{Form::label('application_link', 'Application Link') }}
+            {{Form::textarea('application_link','',[ 'class' => 'form-control col-12', 'placeholder' => 'Enter Application Link']) }}
+        </div>
+        <div class = "form-group">
+            {{Form::label('website', 'Website') }}
+            {{Form::textarea('website','',[ 'class' => 'form-control col-12', 'placeholder' => 'Enter Website/URL']) }}
+        </div>
+
         </div>
         <div class="form-group">
             {{ Form::file('image')}}
         </div>
-    {{-- </div> --}}
+    
     
     {{Form::submit('Submit', ['class' => 'btn btn-primary'])}}
     {!!Form::close() !!}

@@ -107,7 +107,9 @@ Route::get('/mentorviewprofile','MentorController@mentorviewprofile');
 
 //tanya
 Route::get('/stakeholderdashboard','StakeholderController@stakeholderdashboard');
+
 Route::get('/mentorapplyform','MentorController@mentorapplyform');
+Route::post('/mentorapplyform','MentorController@store');
 
 
 

@@ -16,13 +16,15 @@ class Mentor extends Migration
         Schema::create('mentor', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('u_id');
+            $table->string('position');
             $table->string('preferred_stage');
             $table->string('city');
             $table->string('state');
             $table->bigInteger('phone');
             $table->text('address');
             $table->text('description');
-            $table->integer('ministry');
+            $table->string('ministry');
+            $table->string('department');
             $table->string('industry');
             $table->string('sector');
             $table->string('image');
