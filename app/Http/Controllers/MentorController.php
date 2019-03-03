@@ -18,4 +18,18 @@ class MentorController extends Controller
         $mentor = Mentor::find($Mid);
         return view('mentorview.uploads')->with('datas', $mentor->datas);
     }
+    public function dashboard()
+    {
+        return view('mentorview.dashboard');
+    }
+    public function update()
+    {
+        return view('mentorview.update');
+    }
+
+    public function mentorapplyform()
+    {
+        return view('mentorview.mentorapplyform');
+    }
+
 }

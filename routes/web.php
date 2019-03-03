@@ -81,8 +81,16 @@ Route::get('/list_mentors','StartupController@list_mentors');
 // Route::get('/admin/stakeholder-inital','StakeholderController@index');
 Route::post('/admin/reglvl1', 'StakeholderController@store');
 //abhishek
+<<<<<<< Updated upstream
 Route::get('/dashboard','StartupController@dashboard')->name('startup.auth');
 
+=======
+Route::get('/dashboard','StartupController@dashboard');
+Route::get('/mentor_dashboard','MentorController@dashboard');
+Route::get('/update','MentorController@update');
+Route::get('/application','StartupController@application');
+Route::get('/viewprofile','StartupController@viewprofile');
+>>>>>>> Stashed changes
 
 
 
@@ -95,7 +103,8 @@ Route::get('/dashboard','StartupController@dashboard')->name('startup.auth');
 
 
 //tanya
-
+Route::get('/stakeholderdashboard','StakeholderController@stakeholderdashboard');
+Route::get('/mentorapplyform','MentorController@mentorapplyform');
 
 
 

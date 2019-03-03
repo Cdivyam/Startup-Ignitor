@@ -1,5 +1,5 @@
 
-@extends('startupview.app')
+@extends('mentorview.app')
 
 
 @section('content')
@@ -8,12 +8,13 @@
     <div class="container-fluid">
       <!-- Breadcrumbs-->
       <ol class="breadcrumb">
-          <li class="breadcrumb-item active">StartupView</li>
+          <li class="breadcrumb-item active">MentorView</li>
         <li class="breadcrumb-item">
-          <a href="/mentor_dashboard">Dashboard</a>
+          <a href="#">Dashboard</a>
         </li>
         
-        
+        <li class="breadcrumb-item">
+          <a href="#">Update Profile</a>
       </ol>
       <!-- Icon Cards-->
       <div class="row">
