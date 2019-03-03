@@ -14,7 +14,7 @@
       <div class="row">
         <div class="col-12">
           <h1 class="text-center">Mentor</h1>
-          
+          <p>you are logged in. your account is: {{auth()->user()->verified() ? 'verified' : 'not verified'}}
         </div>
       </div>
     </div>

@@ -33,7 +33,8 @@
                           <div class="card-body pt-5">
                               <img src="" alt="profile-image" class="profile">
                               <h5 class="card-title"><p>Name:abcd</p></h5>
-                              <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
+                              <p id="text"> Type:Stakeholder</p>
+                              <p>Stage:Ideation</p>
                               <a href="#" class="btn btn-primary">View profile</a>
                               <h2>Rating</h2>
                               <span class="fa fa-star checked"></span>

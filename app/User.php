@@ -1,7 +1,7 @@
 <?php
 
 namespace App;
-
+use App\Notifications\VerifyEmail;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -15,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password','sellist',
+        'name', 'email', 'password','sellist','token',
     ];
 
     /**
@@ -29,5 +29,13 @@ class User extends Authenticatable
 
     public function stakeholder(){
         return $this->hasMany('App\StakeHolder');
+    }
+    public function verified()
+    {
+        return $this->token === null;
+    }
+    public function sendVerificationEmail()
+    {
+        $this->notify(new VerifyEmail($this));
     }
 }
