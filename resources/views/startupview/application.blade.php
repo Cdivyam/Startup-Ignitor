@@ -1,147 +1,142 @@
 @extends('startupview.app')
-
 @section('content')
 
 <style>
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #f1f1f1;
-  padding: 20px;
-  font-family: Arial;
-}
-
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
-
-h1 {
-  font-size: 50px;
-  word-break: break-all;
-}
-
-.row {
-  margin: 8px -16px;
-}
-
-/* Add padding BETWEEN each column (if you want) */
-.row,
-.row > .column {
-  padding: 8px;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  display: none; /* Hide columns by default */
-}
-
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: white;
-  padding: 10px;
-}
-
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
-}
-
-/* Style the buttons */
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: white;
-  cursor: pointer;
-}
-
-/* Add a grey background color on mouse-over */
-.btn:hover {
-  background-color: #ddd;
-}
-
-/* Add a dark background color to the active button */
-.btn.active {
-  background-color: #666;
-   color: white;
-}
-
-</style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      background-color: #f1f1f1;
+      padding: 20px;
+      font-family: Arial;
+    }
+    
+    /* Center website */
+    .main {
+      max-width: 1000px;
+      margin: auto;
+    }
+    
+    h1 {
+      font-size: 50px;
+      word-break: break-all;
+    }
+    
+    .row {
+      margin: 8px -16px;
+    }
+    
+    /* Add padding BETWEEN each column (if you want) */
+    .row,
+    .row > .column {
+      padding: 8px;
+    }
+    
+    /* Create three equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 33.33%;
+      display: none; /* Hide columns by default */
+    }
+    
+    /* Clear floats after rows */ 
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Content */
+    .content {
+      background-color: white;
+      padding: 10px;
+    }
+    
+    /* The "show" class is added to the filtered elements */
+    .show {
+      display: block;
+    }
+    
+    /* Style the buttons */
+    /* .btn {
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      background-color:#0069D9;
+      cursor: pointer;
+    } */
+    
+    /* Add a grey background color on mouse-over */
+    .btn:hover {
+      background-color: #ddd;
+    }
+    
+    /* Add a dark background color to the active button */
+    .btn.active {
+      background-color: #666;
+       color: white;
+    }
+    
+    </style>
 
 <div class="content-wrapper">
-        <div class="container-fluid">
-                <!-- Breadcrumbs-->
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item">
-                    <a href="/">Dashboard</a>
-                  </li>
-                  <li class="breadcrumb-item active">List Of Stake Holders</li>
-                </ol>
-                <div class="row">
-                  <div class="col-12">
-                    <h1>Stakeholders</h1>
-                    <p>Here is the list of Stakeholders available in our Organisation</p>
-                  </div>
-                </div>
+    <div class="container-fluid">
+            <!-- Breadcrumbs-->
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="/">Dashboard</a>
+              </li>
+              <li class="breadcrumb-item active">Status Of Applications</li>
+            </ol>
+            <div class="row">
+              <div class="col-12">
+                <h1>Applications</h1>
+                <p>List Of Applications</p>
               </div>
-              <div id="myBtnContainer">
-                    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-                    <button class="btn" onclick="filterSelection('accelerator')"> Accelerator</button>
-                    <button class="btn" onclick="filterSelection('incubator')"> Incubator</button>
-                    <button class="btn" onclick="filterSelection('investor')"> Investor</button>
-                    <button class="btn" onclick="filterSelection('serviceprovider')"> Service Provider</button>
-                  </div>
-                  
-                  <div class="col-sm-12 mb-3">
-                      <input type="text" id="myFilter" class="form-control" onkeyup="myFunction1()" placeholder="Search for names..">
-                    </div>
-        <div class="section">
+            </div>
+          </div>
+          <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')">Show all</button>
+                <button class="btn btn-success" onclick="filterSelection('accepted')">Accepted</button>
+                <button class="btn btn-danger" onclick="filterSelection('rejected')">Rejected</button>
+                <button class="btn btn-warning" onclick="filterSelection('pending')">Pending</button>
+              </div>
+
+              <div class="section">
                 <div class="container">
                   
                    <div class="row" >                                                                
                     <div class="row"  id="myItems">                                             
                      <div class="card-deck">
-                        <div class="column accelerator">                        
+                        <div class="column accepted">                        
                         <div class="card border-dark mb-3" style="max-width: 18rem;">                        
                            <div class="card profile-card-2">                                   
                                    <div class="card-body pt-5" class="card-body text-dark">
                                        <img src="" alt="profile-image" class="profile"/>
                                        <h5 class="card-title"><a href="#">A</a></h5>
                                        <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
-                                       <a href="#" class="btn btn-default">View profile</a>
+                                       <a href="#" class="btn btn-primary">View profile</a>
                                        <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
                                    </div>
                            </div>
                                </div>
                        </div>
-                       <div class="column accelerator">                                    
+                       <div class="column accepted">                                    
                             <div class="card border-dark mb-3" style="max-width: 18rem;">
                                 <div class="card profile-card-2">                                      
                                         <div class="card-body pt-5" class="card-body text-dark">
                                             <img src="" alt="profile-image" class="profile"/>
                                             <h5 class="card-title"><a href="#">b</a></h5>
                                             <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
-                                            <a href="#" class="btn btn-default">View profile</a>
+                                            <a href="#" class="btn btn-primary">View profile</a>
                                             <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
                                         </div>
                                 </div>
                                     </div>
                             </div>
-                            <div class="column accelerator">
+                            <div class="column accepted">
                      
                                     <div class="card border-dark mb-3" style="max-width: 18rem;">
                                         <div class="card profile-card-2">
@@ -150,13 +145,13 @@ h1 {
                                                     <img src="" alt="profile-image" class="profile"/>
                                                     <h5 class="card-title"><a href="#">c</a></h5>
                                                     <p class="card-text">Lorem Ipsum is simply dummy text Lorem Ipsum has been the industry's standard dummy text</p>
-                                                    <a href="#" class="btn btn-default">View profile</a>
+                                                    <a href="#" class="btn btn-primary">View profile</a>
                                                     <div class="icon-block"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"> <i class="fa fa-twitter"></i></a><a href="#"> <i class="fa fa-google-plus"></i></a></div>
                                                 </div>
                                         </div>
                                             </div>
                                     </div>
-                                    <div class="column incubator">
+                                    <div class="column rejected">
                      
                                             <div class="card border-dark mb-3" style="max-width: 18rem;">
                                                 <div class="card profile-card-2">
@@ -173,7 +168,7 @@ h1 {
                                             </div>
                      
                      
-                                    <div class="column incubator">
+                                    <div class="column rejected">
                      
                                             <div class="card border-dark mb-3" style="max-width: 18rem;">
                                                 <div class="card profile-card-2">
@@ -188,7 +183,7 @@ h1 {
                                                 </div>
                                                     </div>
                                             </div>
-                                            <div class="column incubator">
+                                            <div class="column rejected">
                      
                                                     <div class="card border-dark mb-3" style="max-width: 18rem;">
                                                         <div class="card profile-card-2">
@@ -203,7 +198,7 @@ h1 {
                                                         </div>
                                                             </div>
                                                     </div>
-                                                    <div class="column investor">
+                                                    <div class="column pending">
                      
                                                             <div class="card border-dark mb-3" style="max-width: 18rem;">
                                                                 <div class="card profile-card-2">
@@ -218,7 +213,7 @@ h1 {
                                                                 </div>
                                                                     </div>
                                                             </div>
-                                                            <div class="column investor">
+                                                            <div class="column pending">
                      
                                                                     <div class="card border-dark mb-3" style="max-width: 18rem;">
                                                                         <div class="card profile-card-2">
@@ -233,7 +228,7 @@ h1 {
                                                                         </div>
                                                                             </div>
                                                                     </div>
-                                                                    <div class="column investor">
+                                                                    <div class="column pending">
                      
                                                                             <div class="card border-dark mb-3" style="max-width: 18rem;">
                                                                                 <div class="card profile-card-2">
@@ -249,7 +244,7 @@ h1 {
                                                                                     </div>
                                                                             </div>
 
-                                                                            <div class="column serviceprovider">
+                                                                            <div class="column accepted">
                      
                                                                             <div class="card border-dark mb-3" style="max-width: 18rem;">
                                                                                 <div class="card profile-card-2">
@@ -264,7 +259,7 @@ h1 {
                                                                                 </div>
                                                                                     </div>
                                                                             </div>
-                                                                            <div class="column serviceprovider">
+                                                                            <div class="column accepted">
                      
                                                                             <div class="card border-dark mb-3" style="max-width: 18rem;">
                                                                                 <div class="card profile-card-2">
@@ -279,7 +274,7 @@ h1 {
                                                                                 </div>
                                                                                     </div>
                                                                             </div>
-                                                                            <div class="column serviceprovider">
+                                                                            <div class="column pending">
                      
                                                                             <div class="card border-dark mb-3" style="max-width: 18rem;">
                                                                                 <div class="card profile-card-2">
@@ -294,7 +289,7 @@ h1 {
                                                                                 </div>
                                                                                     </div>
                                                                             </div>
-                                                                            <div class="column serviceprovider">
+                                                                            <div class="column pending">
                      
                                                                             <div class="card border-dark mb-3" style="max-width: 18rem;">
                                                                                 <div class="card profile-card-2">
@@ -320,8 +315,7 @@ h1 {
                    </div>
                  
                 </div>
-
-                  <script>
+                <script>
                     filterSelection("all") // Execute the function and show all columns
 function filterSelection(c) {
   var x, i;
@@ -396,10 +390,4 @@ function myFunction1() {
     }
 }
                         </script>
-
-
-
-
-
-    
 @endsection

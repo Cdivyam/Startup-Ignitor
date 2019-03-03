@@ -89,4 +89,10 @@ class StartupController extends Controller
     public function chat(){
         return view('startupview.chat');
     }
+    public function application(){
+        return view('startupview.application');
+    }
+    public function viewprofile(){
+        return view('startupview.viewprofile');
+    }
 }
