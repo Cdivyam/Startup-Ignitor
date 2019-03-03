@@ -15,7 +15,7 @@
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="My Applications">
                 <a class="nav-link" href="{{ url('/myapplication') }}">
                     <i class="fa fa-fw fa-area-chart"></i>
-                    <span class="nav-link-text">My Applications</span>
+                    <span class="nav-link-text">Mentee Requests</span>
                 </a>
             </li>
             

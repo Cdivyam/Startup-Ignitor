@@ -137,7 +137,7 @@ onBistriConferenceReady = function () {
  
 // when button "Join Conference Room" has been clicked
 function joinConference(){
-   var roomToJoin = "SIH";
+   var roomToJoin = "ABC";
    // if "Conference Name" field is not empty ...
    if( roomToJoin ){
        // ... join the room
