@@ -1,4 +1,4 @@
-@extends('startupview.app')
+@extends('mentorview.app')
 
 @section('content')
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
