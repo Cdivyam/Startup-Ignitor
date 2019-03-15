@@ -20,7 +20,7 @@
             </li>
             
             <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Ongoing Connections">
-                <a class="nav-link" href="{{ url('/admin/tables') }}">
+                <a class="nav-link" href="{{ url('/ongoingconnection') }}">
                     <i class="fa fa-fw fa-exchange"></i>
                     <span class="nav-link-text">Ongoing Connections</span>
                 </a>
